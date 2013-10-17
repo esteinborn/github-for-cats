@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Responsive Design Presentation</title>
+	<meta name="description" content="A framework for easily creating beautiful responsive web sites for New York State">
+	<meta name="author" content="Eric Steinborn and Craig Patik">
+	<meta name="keywords" content="excelsior,responsive web design,new york state,its">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+	<!-- For syntax highlighting -->
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+  (function() {
+    var printcss = '<link rel="stylesheet" href="css/print/';
+    if (window.location.search.match(/print-pdf/gi)) { printcss += 'pdf'; }
+    else if (window.location.search.match(/print-speaker/gi)) { printcss += 'speaker'; }
+    else { printcss += 'paper'; }
+    printcss += '.css" type="text/css" media="print">';
+    console.log(printcss);
+  	document.write(printcss);
+  }());
+	</script>
+	<!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<!-- ******** *************************** ******* -->
+      <!-- ******** Slide 1 - Craig begins here ******* -->
+      <!-- ******** *************************** ******* -->
+
+      <section>
+          <h2>ITS Collaboration</h2>
+          <div><img src="img/ITSonly.png" class="noshadow" alt="ITS logo"></div>
+          <aside class="notes">
+              <p>My name is Craig Patik, and I'm from the Department of Tax and Finance.</p>
+              <p><i>turn to Eric</i></p>
+              <p>As Luke was saying, we recently had the opportunity for a 3-week code sprint to tackle the problem of mobile and responsive web design.</p>
+              <p>Normally that's a problem that many small teams will attempt to solve in isolation.</p>
+              <p>However, there is a wide array of talent across New York, and with ITS we now have this amazing mechanism to bring all of that talent together and get things done.</p>
+              <p>In other words, put a bunch of smart people in a room so they can get stuff done.</p>
+              <p>And that's what we did.</p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+      <section data-transition="fade">
+          <h2>Put a Bunch of Smart People in a Room</h2>
+          <div>
+              <br>
+              <img src="img/sprint1.jpg" class="full-width" alt="ITS programmers during a code sprint">
+          </div>
+          <aside class="notes">
+              <p>The code sprint was quite the experience.</p>
+              <p>It wasn't just any old day at the office. It wasn't just me and a couple of coworkers shooting the breeze about what we might do "if only" we didn't have this restriction or that obstacle.</p>
+              <p>There were so many intelligent ideas bouncing around I could barely keep up at times.</p>
+              <p>We were so productive I felt like I accomplished more in 3 weeks than I did in the past year.</p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+      <section data-transition="fade">
+          <h2>Put a Bunch of Smart People in a Room</h2>
+          <div>
+              <img src="img/sprint2.jpg" class="full-width" alt="ITS programmers during a code sprint">
+          </div>
+          <aside class="notes">
+              <ul>
+                  <li>We talked about how an ideal site would work.</li>
+                  <li>We weren't burdened with limitations. The sky was the limit.</li>
+                  <li>We threw around every good idea with no thought about the consequences, just to see what would stick.</li>
+              </ul>
+              <p>But that's not normally how development happens. Let's step back for a moment and look at how traditional development normally works.</p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+      <section data-transition="fade">
+          <h2>Typical Development Process</h2>
+          <div class="fragment" data-fragment-index="0">
+            <img src="img/one-wheel.png" class="noshadow" alt="a single car wheel">
+          </div>
+          <aside class="notes">
+              <p>Typically when a development team solves a challenge the result is just reinventing a wheel.</p>
+              <p><i>show image</i></p>
+              <p>But when you look at the scope of work across an entire organization, such as New York State, what do you end up with?</p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+      <section data-transition="fade">
+          <h2>Typical Development Process</h2>
+          <div>
+              <img src="img/wheels-multi-color.png" class="noshadow" alt="A whole bunch of wheels, each a different color and style">
+          </div>
+          <aside class="notes">
+              <p>A bunch of wheels that all do the same thing.</p>
+              <p><i>next, quickly</i></p>
+          </aside>
+      </section>
+      <section>
+          <h2>Lack of Collaboration</h2>
+          <div>
+              <img src="img/money-1.jpg" alt="Whirlpool of dollar bills">
+          </div>
+          <aside class="notes">
+              <p>This is terribly inefficient</p>
+              <p>It's redundant.</p>
+              <p>It's a waste of time, and it's a waste of money.</p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+      <section>
+          <h2>What's the Alternative?</h2>
+          <!-- <p>How do we avoid reinventing the wheel?</p> -->
+          <p class="fragment">What makes the web great?</p>
+          <aside class="notes">
+              <p>We discussed how to go about tackling this problem.</p>
+              <p><i>bullet</i></p>
+              <p>Our angle was think about how web development has advanced dramatically in the last few years.</p>
+              <p>Maybe that can give us some insight about a different approach.</p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+      <section>
+          <h2>The Web is a Series of <strike>Tubes</strike> Components</h2>
+          <div class="fragment">Let's create some reusable components.</div>
+          <div>
+              <img src="img/tubes.png" style="height:500px" class="noshadow" alt="pipes">
+          </div>
+          <aside class="notes">
+              <p>The fundamental principle behind the best sites and services today is modularity and reusability</p>
+              <p>With those concepts comes flexibility.</p>
+              <p>Flexibility is exactly what we need to make a site work for all those devices we saw a few minutes ago during Luke's presentation.</p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+      <section>
+          <h2>Future-Friendly Websites</h2>
+          <div class="fragment">
+              <p>What device will you be unwrapping tomorrow?</p>
+              <br>
+              <p class="fragment" data-fragment-index="1">What device will you be unwrapping two holidays from now?</p>
+              <img src="img/present.png" class="noshadow" alt="" style="height:400px" alt="Wrapped gift covered with question marks">
+          </div>
+          <aside class="notes">
+              <p><i>show image</i></p>
+              <p>You can probably imagine the things your kids will be unwrapping with glee next holiday. And, let's be honest, what <i>you</i> will be unwrapping with glee.</p>
+              <p>We can make predictions about the near-future and feel pretty confident.</p>
+              <p><i>bullet</i></p>
+              <p>But what about in two years? Three?</p>
+              <p>The world keeps moving forward, but realistically your code is going to be out there for a long time, so you have to prepare for anything that might be thrown at it.</p>
+              <p>All this can be summed up in one thought: <i>next, quickly</i></p>
+          </aside>
+      </section>
+
+      <section>
+          <h2>Responsive Design Can Be Hard</h2>
+          <p>It takes a lot of time</p>
+          <p>It's a moving target</p>
+          <p>It's fundamentally different</p>
+          <!-- <p>Don't reinvent the wheel again</p> -->
+          <aside class="notes">
+          	  <p>Responsive design can be hard. <i>bullet</i></p>
+              <p>It takes a lot of time to keep up with all the new techniques and best practices constantly coming to the forefront. <i>bullet</i></p>
+              <p>It's a moving target &mdash; you have to stay on top of the latest developments, just as users are staying on top of the latest shiny new phone or tablet. <i>bullet</i></p>
+              <p>And it's just plain different than what we're used to.</p>
+              <p>All of this can be overwhelming, so we looked around to see if anyone else had already attempted this problem.</p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+
+      <section>
+          <h2>Is There Anybody Out There?</h2>
+          <div>
+              <img src="img/anybodyoutthere.jpg" style="height:500px" alt="Illustration of a boy looking into the stars">
+          </div>
+          <aside class="notes">
+              <p>Fortunately, we found a few organizations doing a good job tackling responsive web design, and we chose the one that fit best.</p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+
+      <section data-transition="fade">
+          <h2>Foundation</h2>
+          <div>
+            <a href="http://foundation.zurb.com">foundation.zurb.com</a><br>
+            <div class="fragment" data-fragment-index="0">
+              <div>Mobile First</div>
+              <div>Semantic Markup</div>
+              <div>Library of JavaScript Plugins</div>
+            </div>
+          <div><img class="noshadow" src="img/device-bg1.png" style="max-height:300px;" alt="Zurb yeti mascot"></div>
+          <aside class="notes">
+              <p>We chose Foundation, a framework made by Zurb.</p>
+              <p>Foundation is modular, it's very customizable, and it provides a great base to start from.</p>
+              <p>It's the perfect place to start for a responsive design.</p>
+              <p>But we know that New York agency sites are rich and interactive and require some enhancements on top of what Foundation provides.</p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+
+      <section>
+          <h2>So We Started Making Stuff</h2>
+          <div>
+              <br>
+              <img src="img/sprint1.jpg" class="full-width" alt="ITS programmers during a code sprint">
+          </div>
+          <aside class="notes">
+              <p>We thought of components that are common to most web sites, but which are not inherently flexibile.</p>
+              <p>We redesigned them from the ground up and made them responsive and adaptable. I'd like to show you few now.</p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+
+      <section>
+          <h2>Navigation</h2>
+          <div>
+              <a href="demos/navigation.html" target="_blank">View Demo</a>
+          </div>
+          <div><img src="img/CropperCapture_11_.gif" style=""></div>
+          <aside class="notes">
+              <p>Navigation plays very differently roles in different contexts.</p>
+              <p>When you have the large space of a widescreen monitor, you want it readily available so you can jump around the site as you please, but on a small screen you want it out the of way so you can focus on the task at hand.</p>
+              <p><i>launch demo</i></p>
+              <p>Here's a pretty standard navigation bar. It has some main categories and sub-categories. <i>show submenus</i></p>
+              <p>I've got a resizer tool here <i>(mouse around it)</i> that can show us what it looks like at different sizes. Watch what happens when we go to the size of a typical tablet.</p>
+              <p>click <strong>tablet</strong></p>
+              <p>The menu is still there, but it's tucked out of the way. <i>click hamburger</i></p>
+              <p>It's still just as functional. Even the sub-menus are here. <i>click Europe</i></p>
+              <p>It works great at a smartphone size as well &mdash; <i>click phone</i></p>
+              <p>In fact, <i>close menu</i> we put the menu icon on the right because statistics show most people hold their phones in their right hand, and this makes it easier for people to reach with their thumbs.</p>
+          </aside>
+      </section>
+
+      <section data-transition="fade">
+          <h2>Responsive Grid</h2>
+          <div class="fragment" data-fragment-index="0">
+          	<img src="img/amazon-no-grid.png">
+          </div>
+          <aside class="notes">
+              <p>Next up: grids.</p>
+              <p>Grids let us define a layout for our components. That layout can be adjusted to fit different conditions.</p>
+              <p>Every site can be designed around a grid.</p>
+              <p><i>show image</i></p>
+              <p>Even a relatively cluttered, mish-mash of a site, like an Amazon product page, has some structure behind it. <i>next</i></p>
+          </aside>
+      </section>
+
+      <section data-transition="fade">
+          <h2>Responsive Grid</h2>
+          <div>
+          	<img src="img/amazon-grid.png">
+          </div>
+          <aside class="notes">
+              <p>A <em>responsive</em> grid takes it a step further.</p>
+              <p>Each one of those red boxes up there can be thought of as a single component.</p>
+              <p>Components can be laid out and reflowed in different configurations depending on the context and the screen size.</p>
+          </aside>
+      </section>
+
+      <section data-transition="fade">
+          <h2>Responsive Grid</h2>
+          <div>
+          	<a href="demos/grid.html" target="_blank">View Demo</a>
+          </div>
+          <div><img src="img/grid.gif" alt=""></div>
+          <aside class="notes">
+          		<p>Let's take a look at an example of how a grid can reflow. <i>launch demo</i></p>
+              <p>Now, for this demo I'm just using the basic outline of a grid. These boxes could contain any kind of content &mdash; text, images, buttons, and so on.</p>
+              <p>These are two examples that take different approaches to responsiveness.</p>
+              <p>At the top are three sections laid side-by-side and split into equal thirds.</p>
+              <p>Down here, in red, we have a similar side-by-side layout. But lets assume that the content in these red areas can't get much narrower and still be usable.</p>
+              <p>Let's see how these two arrangements react when we go down to the size of a tablet.</p>
+              <p><i>click tablet</i></p>
+              <p>Your eye was probably drawn to the red area where the pieces are now stacked vertically. This ensures each one has enough width for its content.</p>
+              <p>But up here, the blue layout is no longer split into thirds. <i>mouse around right side</i> Because the content in this piece needs more width, it has actually expanded to take up half of the screen. Over on the left the pieces have been shrunk down to compensate.</p>
+              <p>Let's take grids a step further.</p>
+              <p><i>click 'Advanced' button</i></p>
+              <p>Now we have two separate structures nested together. At this size, most of the pieces are stacked on top of each other and they're pretty symmetrical.</p>
+              <p>Let's go back to a wider screen. <i>click desktop</i></p>
+              <p>Now everything is side-by-side, all in one row. The pieces are using different proportions then before &mdash; they're no longer symmetrical. This is all the same HTML and the same content, it's just laid out differently to maintain legibility.</p>
+              <p>The code behind this is not complex. It's the approach to your page's structure that requires some thought. You really have to take a moment to look at your content on different-sized screens to get a feel for what works best.</p>
+              <p>Let's move on to the last demo. <i>next</i></p>
+          </aside>
+      </section>
+
+      <section data-transition="fade">
+          <h2>Responsive Tables</h2>
+          <div style="visibility:hidden">
+              <a href="demos/tables.html" target="_blank">View Demo</a>
+          </div>
+          <div><img src="img/responsive-tables-wide.png" class="full-width no-box-shadow noshadow" alt=""></div>
+          <aside class="notes">
+              <p>Tables are a tough nut to crack. We all have them, and we love to cram them with data.</p>
+              <p>A lot of the data is truly pertinent, maybe even all of it, but you just can't take a table like this <i>bullet</i> and shove it onto a phone like this <i>next, quickly</i></p>
+          </aside>
+      </section>
+
+      <section data-transition="fade">
+          <h2>Responsive Tables</h2>
+          <div style="visibility:hidden">
+              <a href="demos/tables.html" target="_blank">View Demo</a>
+          </div>
+          <div><img src="img/responsive-tables-phone.png" class="full-width no-box-shadow noshadow" alt=""></div>
+      </section>
+
+      <section data-transition="fade">
+          <h2>Responsive Tables</h2>
+          <div>
+              <a href="demos/tables.html" target="_blank">View Demo</a>
+          </div>
+          <div><img src="img/responsive-tables.gif" alt=""></div>
+          <aside class="notes">
+              <p><i>bullet</i></p>
+              <p>Let's think about how we can make all that data available everywhere. <i>open demo</i></p>
+              <p>Here we have some scientists and information about them. It's all important information, but for any given user some of it will be more important than the rest.</p>
+              <p>So let's try and show as much data as possible, as long as it still fits. The summary column would be a good place to start since it takes so much room to display legibly.<i>click tablet</i></p>
+              <p>So now the summary column is gone, which gives the rest of the data more room to breathe.</p>
+              <p>And if the user wants to, they can still see the summary with this handy menu right above the table. <i>use menu to show summary</i></p>
+              <p>This menu lets the user tell us what's important to them. <i>hide summary</i></p>
+              <p>Let's go a bit further, all the way down to a smart phone size. <i>click phone</i></p>
+              <p>Now we're left with 3 columns, because the data would be too squished if we showed more.</p>
+              <p>These 3 columns were deemed more important by the page designer, who specified each column's importance in the page's HTML.</p>
+              <p>Again, ultimately it's up to the user to decide what's useful, and if they want to they can always re-display columns and scroll around to view the content. <i>redisplay all columns and scroll around</i></p>
+          </aside>
+      </section>
+
+      <section>
+          <h2 style="padding-top:15%">“That sounds terrific and everything, but how can I possibly use these super amazing, technologically advanced components on <u>MY</u> sites and apps?”</h2>
+          <aside class="notes">
+              <p>That's actually a really good question.</p>
+              <p>One of our goals was to take the everything that came out of this collaboration and make it modular and reusable by other developers. Our other goal and to set it up so it could continue to evolve through broader collaboration.</p>
+              <p>To make this happen, we created a new web framework.</p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+      <section>
+          <h2>The New Web Framework</h2>
+          <div class="fragment">Is Responsive</div>
+          <div class="fragment">Is Modern</div>
+          <div class="fragment">Is Whimsically Magically Magnificent<br>
+            <img src="img/whimsical.png" class="noshadow" style="height:500px" alt="unicorns and rainbows">
+          </div>
+          <aside class="notes">
+              <p>The new framework is responsive...</p>
+              <p><i>bullet</i></p>
+              <p>It's modern...</p>
+              <p><i>bullet</i></p>
+              <p><i>last bullet, gesture to Eric</i></p>
+              <p><i>next</i></p>
+          </aside>
+      </section>
+      <section>
+          <h2>Built for New York State</h2>
+          <div class="collage">
+              <div class="img-flag">
+                  <img src="img/Flag_of_New_York.small.png" alt="New York State Flag">
+                  <div class="fragment img-flag-outline" data-fragment-index="0">
+                      <img src="img/Flag_of_New_York.small_outline.png" alt="New York State Flag">
+                  </div>
+              </div>
+              <div class="img-statue">
+                  <img src="img/statue-of-liberty.jpg" alt="Statue of Liberty">
+                  <small>Photo credit: <a href="http://www.flickr.com/photos/hesterr/6775796722/">Hesterr</a></small>
+              </div>
+              <div class="img-capitol">
+                  <img src="img/capitol_cropped.jpg" alt="New York State Capitol building">
+                  <small>Photo credit: <a href="http://www.flickr.com/photos/jstephenconn/5425778154/">J. Stephen Conn</a></small>
+              </div>
+          </div>
+          <div class="fragment img-flag-fuzzy" data-fragment-index="1">
+              <img src="img/flag_big_fuzzy.jpg" alt="New York State Flag"> <!-- class="full-width no-box-shadow noshadow" -->
+          </div>
+          <div class="fragment img-flag-clear" data-fragment-index="2">
+              <img src="img/flag_big_clear.png" alt="New York State Flag">
+          </div>
+          <aside class="notes">
+              <p>And best of all, it has been designed and tailored specifically for New York State.</p>
+              <ul>
+                  <li><i>Eric</i> But what would we call such a thing?</li>
+                  <li class="mine"><i><strong>(Me)</strong></i> The name is right in front of you.</li>
+                  <li><i>Eric</i> I can’t see it...</li>
+                  <li class="mine"><i><strong>(Me)</strong></i> It’s right there <i>point</i></li>
+                  <li><i>Eric</i> I still can't see it though</li>
+                  <li class="mine"><i><strong>(Me)</strong></i> Let me zoom in on it</li>
+                  <li><i>Eric</i> Okay, can you enhance that?</li>
+              </ul>
+          </aside>
+      </section>
+
+			<!-- ******** **************************** ******* -->
+			<!-- ******** Slide 31 - Eric Begins here  ******* -->
+			<!-- ******** **************************** ******* -->
+
+			<section data-transition="fade">
+				<div>
+					<img class="noshadow" src="img/excelsior-dark-text-w-shadow.png" style="">
+				</div>
+				<aside class="notes">
+					It's called Excelsior, let me tell you all about it! <i>next</i>
+				</aside>
+			</section>
+      <section>
+        <h2>Excelsior is</h2>
+        <ul>
+          <li class="fragment">collaborative</li>
+          <li class="fragment">platform agnostic</li>
+          <li class="fragment">cutting-edge</li>
+          <li class="fragment">open-source</li>
+        </ul>
+        <div class="fragment"><br><br>Pre-Beta is Available Today @<br><a href="http://nys-its.github.io/excelsior/" target="_blank">nys-its.github.io/excelsior/</a></div>
+        <aside class="notes">
+          The Excelsior Responsive Web Framework is<br>
+          <i>&raquo; </i>collaborative<br>
+          <i>&raquo; </i>platform agnostic<br>
+          <i>&raquo; </i>cutting-edge, <i>&raquo; </i> it's open-source<br>
+          <i>&raquo; </i>And the Pre-Beta is available today on the ITS GitHub repo
+        </aside>
+      </section>
+			<section data-transition="zoom" data-transition-speed="fast">
+				<img src="img/bingo.png" class="noshadow" style="max-height:800px;">
+				<aside class="notes">
+					To whomever just won buzzword BINGO, please hand in your card at the end of the presentation.<br>
+					Let me tell you a little bit about Excelsior <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>Excelsior's Goal</h2>
+				<p>To be the best Responsive Web Design Framework ever.</p>
+				<p class="fragment">Leveraging talent across NYS agencies to collect, research and implement RWD best practices.</p>
+				<div class="fragment" data-fragment-index="0">
+					<br><blockquote>
+						“Ever Upward!”
+					</blockquote>
+				</div>
+				<aside class="notes">
+					Excelsior's goal is to be the best RWD framework ever.<br>
+					<i>&raquo; </i>We hope to accomplish that by leveraging the talent across NYS agencies<br>
+					So you can help accomplish that goal<br>
+					<i>&raquo; </i>In Latin, Excelsior literally means, Ever Upward<br>
+					That's the essence of what Excelsior aims to be, it needs to be constantly looking at what's next<br>
+					Let's discuss some of its key features <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>Some Key Features</h2>
+				<div class="fragment">An easy entry point for beginners</div>
+				<div class="fragment">Flexible enough for advanced developers</div>
+				<div class="fragment">Reusable, re-skinnable, accessible components and patterns</div>
+				<div class="fragment">Ongoing state-wide collaboration effort to implement RWD</div>
+				<aside class="notes">
+					<i>&raquo; </i> First, It's super easy to use, and we'll talk about that a bit later<br>
+					<i>&raquo; </i> But understand that it's flexible enough for advanced developers to modify it to their hearts extent.<br>
+					<i>&raquo; </i>Every component we've demoed for you today is a part of Excelsior<br>
+					<i>&raquo; </i>Its ongoing. It's constantly changing, and we hope that it can help you implement RWD quickly and easily.<br>
+					Let's be perfectly clear up front: <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>Excelsior is Not Another Standard</h2>
+				<div class="fragment">Excelsior isn't a locked code-base,</div>
+				<div class="fragment">...it's essentially yours.</div>
+				<aside class="notes">
+					Excelsior is not another standard, you are not mandated to use it<br>
+					<i>&raquo; </i> You aren't locked to the code-base<br>
+					Use it where you want, edit it however you want,<br>
+					<i>&raquo; </i> it's essentially yours<br>
+					Excelsior is a tool to help you solve your RWD problems <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>Excelsior Makes RWD Easy</h2>
+				<div>All you need to know is HTML &amp; CSS</div>
+				<div class="fragment">Fully documented components</div>
+				<div class="fragment">In-depth wiki</div>
+				<aside class="notes">
+					And Using Excelsior is as easy as using HTML and CSS<br>
+					<i>&raquo; </i> The in-depth Documentation explains how you can implement every component<br>
+					<i>&raquo; </i> and the wiki gives you more detail on how to go about making Excelsior your own<br>
+					After going over these resources you can decide if Excelsior fits your needs. <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<div>
+					<img src="img/butwait.jpg" style="height: 504px;">
+					<br>
+				</div>
+				<aside class="notes">
+					But that's just the beginning of Excelsior...
+				</aside>
+			</section>
+			<section>
+				<h2>Outdated Techniques and Processes</h2>
+				<p class="fragment">"Just throw it on the website"</p>
+				<p class="fragment">Desktop-first design, separate mobile sites</p>
+				<p class="fragment">Plain, manually maintained CSS</p>
+				<p class="fragment">Too many styles and Javascripts loaded on each page</p>
+				<p class="fragment">Mismanaged source control</p>
+				<p class="fragment">Emails and spreadsheets for bugs and changes</p>
+				<p class="fragment red-x-37">&times;</p>
+				<aside class="notes">
+					Stop me if you've NEVER heard of any of these common problems.<br>
+					<i>&raquo; </i> Just put it on the website, I don't care how it looks<br>
+					<i>&raquo; </i> BUUUUT, it must look perfect at 1024 resolution, and that banner better be above the "fold"<br>
+          <i>&raquo; </i> I don't care about mobile, just make a separate mobile site<br>
+					<i>&raquo; </i> Well, you already had too many manually maintained stylesheets and javascript files loaded on that page, which have been effectively doubled since you need to maintain a separate mobile site.<br>
+					<i>&raquo; </i> and while you were working on those manually maintained files,Your mismanaged check-in check-out source control system decided to not allow you to commit your changes to the server, and wont tell you why.<br>
+          <i>&raquo; </i> which means you cant explain to your boss what the problem was in that super accurate and up-to-date spreadsheet or email chain that you use to keep track of your changes.<br>
+					<i>&raquo; </i> I'll wager that every single person in this room has experienced one of these list items.<br>
+          And we all know that they don't work, so <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>Were Treated Like The Evil Beasts They Are</h2>
+				<img src="img/balrog2.gif" style="height: 510px;">
+				<aside class="notes">
+					We Treated them like the Evil Beasts that they are...<br>
+					We stood our ground and we told them: <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>YOU SHALL NOT PASS!</h2>
+				<img src="img/shall-not-pass.gif" style="height: 405px;">
+				<aside class="notes">
+					YOU SHALL NOT PASS!<br>
+					Those outdated techniques were replaced by: <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>Hello, Modern Techniques and Processes</h2>
+				<p class="fragment">Content Based Design</p>
+				<p class="fragment">Multi-Device &amp; Mobile-First</p>
+				<p class="fragment">Preprocessed CSS and Build tasks</p>
+				<p class="fragment">Minified and Combined Assets</p>
+				<p class="fragment">GitHub</p>
+				<p class="fragment">GitHub Issues</p>
+				<div class="fragment"><br>...and it's easy to use!</div>
+				<aside class="notes">
+					A modern web development process including but not limited to:<br>
+					<i>&raquo; </i> content based design,  <i>&raquo; </i> that works on multiple devices because it's mobile first<br>
+          <i>&raquo; </i> Your CSS and Javscript files are pre-processed,  <i>&raquo; </i> they are then compressed and combined into a single JavaScript and CSS file<br>
+					<i>&raquo; </i> Excelsior is hosted on GitHub <i>&raquo; </i> and uses GitHub Issues for bug tracking and feature requests.<br>
+					 <i>&raquo; </i> All of this, and it's still easy to use! <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>What About Browser Support?</h2>
+				<div>Fully functional in all major browsers</div>
+				<div>Chrome, Firefox, Opera, Safari</div>
+				<div>iPhone, Android, and Windows Phones</div>
+				<div class="fragment">Internet Explorer 8 and Higher</div>
+				<aside class="notes">
+					Let's talk about browser support for a minute or two<br>
+					Excelsior is fully functional in all major browsers<br>
+					What about IE support?<br>
+					<i>&raquo; </i>Excelsior is still fully functional in IE 8 and higher, BUT <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>Non-major browsers will still "work"</h2>
+				<p>Serve IE6 &amp; IE7 your mobile or print styles</p>
+				<aside class="notes">
+					Non-major browsers will still "work"<br>
+					The word work is in quotes here because you choose whether to serve your mobile stylesheet or your print stylesheet to non major browsers, like IE6 and 7 .<br>
+          We've explained how to do this in our Wiki<br>
+					Now, I know I've probably lost some of you here... <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>Some People Might be Thinking...</h2>
+				<img src="img/nope.gif" style="height: 360px;">
+				<blockquote class="fragment">"My sites MUST look identical across all browsers and fully support IE6 AND IE7!"</blockquote>
+				<p class="fragment">I've got three things to say about that:</p>
+				<aside class="notes">
+					And some of you are probably thinking<br>
+					Nope, nope, nope, Excelsior isn't for me then,<br>
+					I'll ask you why and you'll say<br>
+					<i>&raquo; </i>My sites must look identical across all browsers and fully support IE6 and IE7!<br>
+          <i>&raquo; </i>I've got three things to say about that. There's a payoff at the end, trust me.<i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>1. Do you REALLY?</h2>
+				<div>
+					<img src="img/ScreenShot154.jpg" style="height: 507px;">
+				</div>
+				<aside class="notes">
+					First, Really?!<br>
+					I have it on good authority that the vast majority of IE usage is based around downloading a better browser.<br>
+					But all joking aside, do you REALLY need to support them?<br>
+					I would urge you to take another look at your analytics:<br>
+          You'll probably notice that IE6-7 usage is down dramatically over the last few years.<br>
+					I'd like to show you my two favorite graphs. <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section data-transition="fade">
+				<h2>IE 6 is Dead</h2>
+				<img src="img/ie6stats.png" style="height: 480px;">
+				<p>IE 6 = 0.15%</p>
+				<small>Source: <a href="http://gs.statcounter.com/#browser-na-monthly-200904-201304">StatCounter</a></small>
+				<aside class="notes">
+					This is a graph detailing IE 6 usage in North America from 2009 to last month<br>
+          I've declared in the title that IE 6 is dead<br>
+					I believe this graph clearly supports that statement<br>
+          IE6 usage is, for all intents and purposes, zero.<br>
+          and believe it or not...  <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section data-transition="fade">
+				<h2>IE 7 Isn't Far Behind</h2>
+				<div>
+					<img src="img/ie7stats.png" style="height: 480px;">
+				</div>
+				<p>IE 7 = 0.74%</p>
+				<small>Source: <a href="http://gs.statcounter.com/#browser-na-monthly-200904-201304">StatCounter</a></small>
+				<aside class="notes">
+					IE7 isn't far behind.<br>
+					You may be thinking "my stats are higher than this"<br>
+					But it may very well be that your internal agency stats are skewing this number making it seem higher than it really is.<br>
+          Serious question: Who counts more, the public or internal users?<br>
+          While im not answering that for your particular agency, I'll tell you that at DCJS, its the public.<br>
+          So, IE6 and 7 are essentially dead <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>2. Don't Shun the Future for the past</h2>
+        <div class="fragment">
+          <blockquote>“Never put off tomorrow<br>what you can do today”</blockquote>
+          <cite class="fragment"><small>- Thomas Jefferson</small></cite>
+        </div>
+				<div class="fragment">
+					<img src="img/wood-mac.png" class="noshadow">
+				</div>
+				<aside class="notes">
+					I was thinking of a really great quote but realized that<br>
+					Someone else had already put it best when he said:<br>
+          <i>&raquo; </i>"Never put off tomorrow what you can do today"<br>
+          <i>AUDIENCE</i> Does anyone know who said that? Yes, Thomas Jefferson.<br>
+          In this context it means: Don't limit yourself to the confines of old, dead legacy web browsers<br>
+          Embrace the future and start implementing changes brought upon by Responsive Web Design, today!<br>
+					We're not programming for Giant Beige CRT monitors on 5 1/4 floppies.<br>
+          <i>&raquo; </i>Or even on the iWood that Thomas Jefferson used back in the day.<br>
+					Taking another look at your analytics... <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section data-transition="fade">
+				<h2>Look Close, You'll See Something</h2>
+				<div>
+					<img src="img/iestats.png" style="height: 480px;">
+				</div>
+				<p>IE Usage 2009-2013</p>
+				<small>Source: <a href="http://gs.statcounter.com/#browser-na-monthly-200904-201304">StatCounter</a></small>
+				<aside class="notes">
+					Not only will you find no traces of the iWood anywhere<br>
+          You'll notice that Combined overall IE usage has dropped drastically over the last 4 years<br>
+					We need to stop focusing so much on declining legacy browsers... <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section data-transition="fade">
+				<h2>Mobile is Winning, Big</h2>
+				<div>
+					<img src="img/mobile-usage.jpg" style="height: 480px;">
+				</div>
+				<p>Mobile Usage 2009-2013</p>
+				<small>Source: <a href="http://gs.statcounter.com/#mobile_browser-na-monthly-200904-201304">StatCounter</a></small>
+				<aside class="notes">
+					And	start addressing this<br>
+					This chart represents a paridigm shift like we've never seen on the web<br>
+					Since the release of the original Iphone, especially in the last 4 years, Mobile usage has just exploded.<br>
+					You simply can't deny mobile anymore, And why would you?<br>
+          I mean, how many people in this room are planning on buying a non-smartphone in the next two years? not many...<br>
+          Your friends and family have been raving about their smartphones, and asking you why you havent upgraded yet<br>
+          I refer to my phone as my "Second Brain", well actually, "My wife's second brain" because shes always using it to difinitively demonstrate to me how wrong I am, whenever she knows im wrong. and trust me... she uses it a lot.<br>
+					If you started a new project today, mobile should be your FIRST thought, don't continue to let it be an after thought. <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>3. If, After The Supporting Evidence...</h2>
+				<div>
+					<img src="img/piles-of-research.png" alt="" class="noshadow">
+				</div>
+				<aside class="notes">
+					Sometimes though after presenting piles of supporting evidence backing up your decision to remove legacy browser support <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>After The Email Back and Forth...</h2>
+					<img src="img/email-fight.png" alt="" class="noshadow">
+				<aside class="notes">
+					And you're simply sick of the back and forth, the will we won't we, the indecision about it over Email <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>After The...</h2>
+				<div class="fragment">
+					Crying?<br>
+					<img src="img/crying.png" alt="" class="noshadow">
+				</div>
+				<aside class="notes">
+					there may have even been some crying<br>
+          Thats my daughter crying becuase I told her she needed to support IE 5<br>
+					But for whatever reason, your site must still support legacy browsers<br>
+          Heres the payoff I mentioned earlier folks <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>Add it to Excelsior Yourself!</h2>
+				<img src="img/typing.gif" style="">
+				<aside class="notes">
+					Add it to Excelsior yourself.<br>
+					You can add your own legacy support to Excelsior.<br>
+					There are a lot of plugins out there that you can leverage to accomplish this.<br>
+					You see, RWD is a moving target, it's always changing, and that can be hard to stay up to date with, or hard to implement correctly... <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>RWD Doesn't Have to be Hard</h2>
+        <p class="fragment">Excelsior aims to help you start out on the right path</p>
+				<p class="fragment">Don't reinvent the wheel again</p>
+				<aside class="notes">
+					But it doesn't 'HAVE' to be, and frankly it shouldn't be.<br>
+					Excelsior isn't the only RWD framework online<br>
+					I urge you to take a look at Excelsior and see if it can help YOU create the Responsive sites that you've been thinking about making<br>
+					<i>&raquo; </i>It can help make RWD easier to manage and to allow you to quickly start your responsive sites and apps and get in the browser day 1.<br>
+					<i>&raquo; </i>You may not need to re-invent the wheel again.<br>
+					I've got one last thing to talk about thats near and dear to my heart, and that is...  <i>Next &raquo; </i>
+				</aside>
+			</section>
+			<section>
+				<h2>Open-Source</h2>
+				<div>
+					<a href="http://www.github.com"><img src="img/GitHub_Logo_SmartObject.png" class="noshadow"></a>
+				</div>
+        <div class="fragment">Licensed without limitations, use, copy, modify, etc</div>
+				<aside class="notes">
+					The Open Source aspect of Excelsior<br>
+          The entire Excelsior code base, currently in "Pre-beta", is hosted on GitHub, where you can download it anytime<br>
+					<i>&raquo; </i> It's also appropriately licensed so that you are free to use, copy, modify, distribute, or even sell it<br>
+					I'm not gonna get into the specifics of GitHub today, i'm giving an in-depth presentation on it next month<br>
+					But because there are so many benefits of hosting Excelsior on GitHub, I want to tell you about my two favorite. <i>Next &raquo; </i>
+				</aside>
+			</section>
+      <section>
+        <h2>Excelsior is People!</h2>
+        <div class="fragment">Contribute back, share your work with the world!</div>
+        <div class="fragment">Add cool new features and components</div>
+        <div class="fragment">Add support for legacy browsers</div>
+        <aside class="notes">
+          The thing that excites me the most about GitHub is the collaboration it allows<br>
+          It's yours just as much as it was ours<br>
+          Excelsior is about the people who contribute back to it to help make it the best Responsive Web Design Framework Ever.<br>
+          <i>&raquo; </i> We urge you to play with Excelsior and then contribute your hard work back to the project.<br>
+          All ideas and opinions will be discussed, You will never be shut out, the door is always open<br>
+          All contributors will receive a pre-determined amount of high-fives and patted-backs based on its level of awesomeness.<br>
+          <i>&raquo; </i> You can add cool new features and components<br>
+          <i>&raquo; </i> Or you are the person who builds support for legacy browsers<br>
+          without greatly sacrificing page performance, not only will you receive your high-fives but I will personally give you a hug. <i>Next &raquo; </i>
+        </aside>
+      </section>
+			<section>
+				<h2>I Did Say "Pre-Beta", Right?</h2>
+        <div class="fragment">All code needs testing</div>
+				<div class="fragment">
+					<div><br>If you find a bug:</div>
+					<div>You can easily report it using <a href="https://github.com/nys-its/excelsior/issues">GitHub Issues</a>
+					</div>
+				</div>
+				<div class="fragment"><img src="img/closed-issues.png" class="noshadow" alt=""></div>
+				<aside class="notes">
+					I hope I've adequately expressed Excelsior's Pre-Beta status<br>
+					<i>&raquo; </i> We still need testers, and testers need a way to file bug reports<br>
+					<i>&raquo; </i> GitHub Issues provide a super slick way for reporting bugs.<br>
+					They are like forums for GitHub Projects where you can submit bugs to the project collaborators<br>
+					You can also use them to ask questions, suggest enhancements, or raise awareness of issues that may not be specifically bug related.<br>
+					<i>&raquo; </i>It's as easy as clicking the "New Issue" button.
+          So, You know about Excelsior, You are excited about New York stepping into a great collaborative solution, but you may be asking <i>Next &raquo; </i>
+				</aside>
+			</section>
+      <section>
+        <h2>How Do I get Started?</h2>
+        <div><img class="fragment" src="img/rwd-google.png"></div>
+        <aside class="notes">
+          How do I get started?<br>
+          After everything we've shown today, You still need to figure out how to pull off RWD correctly.<br>
+          <i>&raquo; </i>Normally you'd start by querying your favorite search engine for "RWD" and sift through 20 million results<br>
+          Each link of varying quality and opinions<br>
+          Some of which are just dead wrong, OR <i>Next &raquo; </i>
+        </aside>
+      </section>
+      <section>
+        <h2><img class="noshadow" src="img/go-responsive.logo.png" style=""></h2>
+        <img class="noshadow" src="img/whats-responsive_sm.png" style="">
+        <p><small><a href="http://nys-its.github.io/go-responsive" target="_blank">nys-its.github.io/go-responsive</a></small></p>
+        <aside class="notes">
+          You could visit Go Responsive<br>
+          A site we created that hosts everything we learned during our 3 week sprint.<br>
+          Things like... <i>Next &raquo; </i>
+        </aside>
+      </section>
+      <section>
+        <h2>Introductory Videos to RWD</h2>
+        <div><img src="img/gr-videos.jpg"></div>
+        <p><small><a href="http://nys-its.github.io/go-responsive/#get-started" target="_blank">nys-its.github.io/go-responsive/#get-started</a></small></p>
+        <aside class="notes">
+          Introductory videos to RWD, Covering topics like:<br>
+          What is Responsive Design<br>
+          How can components function in a responsive way<br>
+          And what are your next steps toward a responsive approach to your next projects <i>Next &raquo; </i>
+        </aside>
+      </section>
+      <section>
+        <h2>Great Resource Links</h2>
+        <div><img src="img/gr-resources.jpg"></div>
+        <p><small><a href="http://nys-its.github.io/go-responsive/about-rwd.html" target="_blank">nys-its.github.io/go-responsive/about-rwd.html</a></small></p>
+        <aside class="notes">
+          It features all of the RWD resources we found<br>
+          These are all top quality links, if you find one that sucks, please open an issue on GitHub to tell us why and give us a better link<br>
+          You can also see some great examples fo responsive sites across the web <i>Next &raquo; </i>
+        </aside>
+      </section>
+      <section>
+        <h2>Component Showcase</h2>
+        <div><img src="img/gr-components.png" class="noshadow"></div>
+        <p><small><a href="http://nys-its.github.io/go-responsive/" target="_blank">nys-its.github.io/go-responsive/</a></small></p>
+        <aside class="notes">
+          You can see every demo we created for the Code Sprint by clicking the "See it in Action" button on the homepage <i>Next &raquo; </i>
+        </aside>
+      </section>
+			<section>
+				<h1 style="padding-top: 20%">Go Responsive</h1>
+        <h1 class="fragment">Today!</h1>
+				<aside class="notes">
+					So you tried out Excelsior and you decided that for whatever reason, it's just not the right solution for your current project.<br>
+					That's okay we know it's not for everyone, and you did your due diligence<br>
+					But even though Excelsior didn't fit, you still need to implement that Responsive Design somehow, right?<br>
+					I urge you to take those first steps into Responsive Design, <i>&raquo; </i> Today<br>
+					Start by taking advantage of the resources we put together on the Go Responsive site<br>
+					Join the Responsive Web Design Group on Yammer and say hi or ask for help<br>
+					Take a look at some of the really amazing responsive design projects all across GitHub that are being updated every day<br>
+					and yes you should even wade through 20 million Google search results to learn even more<br>
+					And, before you know it, you will have made the Responsive web site of your dreams!<i>Next &raquo; </i>
+        </aside>
+			</section>
+			<section>
+				<h2>Thanks for Listening</h2>
+					<br>
+					<div>
+						<h3>Luke Charde</h3>
+						<small>Department of Labor</small>
+					</div>
+					<br><br>
+					<div style="float:left;width:48%;margin-right:4%">
+						<h3>Craig Patik</h3>
+						<small>Department of Taxation &amp; Finance</small>
+					</div>
+					<div>
+						<h3>Eric Steinborn</h3>
+						<small>Division of Criminal Justice Services</small>
+					</div>
+          <br>
+          <div>View this presentation online @<br>
+            <a href="http://bit.ly/excelsiorp">bit.ly/excelsiorp</a><br>
+            <a href="rwd-intro.pdf">Luke's Introduction to RWD slides</a></div>
+			</section>
+      <section>
+        <h2>Questions?</h2>
+        <aside class="notes">
+          Start - "Great Question"<br>
+Can't use GitHub at work -- can still download from the webpage until official permission is granted<br>
+What about apps -- Native apps have their place on the web, and with the right configuration you could use Excelsior for them as well<br>
+IE support - We're officially supporting what Foundation does, but we don't limit you from making any changes to the framework to fit your needs<br>
+
+Great Question, I don't have an answer offhand - I'd be glad to look into it for you. Drop me an email or create an issue on Github.<br>
+Off-topic...Outside of RWD... or this project: ________
+        </aside>
+      </section>
+		</div>
+	</div>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: false,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+		{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+		{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+	</script>
+  <script src="js/custom.js"></script>
+</body>
+</html>
