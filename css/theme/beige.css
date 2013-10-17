@@ -50,7 +50,7 @@ body {
   font-family: "League Gothic", Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
-  text-transform: none;
+  text-transform: uppercase;
   text-shadow: none; }
 
 .reveal h1 {
@@ -63,6 +63,9 @@ body {
   color: #8b743d;
   text-decoration: none;
   -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
@@ -81,13 +84,12 @@ body {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
   border: 4px solid #333333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
   transition: all .2s linear; }
-  .reveal section img.noshadow {
-    box-shadow: none;
-    background: transparent;
-    border: none; }
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
@@ -134,80 +136,7 @@ body {
 .reveal .progress span {
   background: #8b743d;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
-
-.relative {
-  position: relative; }
-
-.red-x-37 {
-  position: absolute;
-  top: -0.31em;
-  left: 25%;
-  font-size: 23em !important;
-  font-weight: bold !important;
-  color: #d00;
-  color: rgba(200, 0, 0, 0.85); }
-
-/* Remove border on transparent images */
-.no-box-shadow {
-  box-shadow: none !important; }
-
-strike {
-  background-image: url(../../img/strike-through.png);
-  background-repeat: repeat-x;
-  background-position: 0 center;
-  text-decoration: none; }
-
-strike {
-  background-image: url(../../img/strike-through-dark.png); }
-
-.reveal blockquote {
-  background: rgba(255, 255, 255, 0.65);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.55); }
-
-img.full-width {
-  display: block;
-  margin-left: auto !important;
-  margin-right: auto !important; }
-
-.collage {
-  position: relative; }
-
-.collage > div {
-  float: left;
-  height: 10em;
-  line-height: 10em; }
-
-.collage img {
-  vertical-align: middle; }
-
-.collage small {
-  position: relative;
-  font-size: 50%; }
-
-.collage .img-flag {
-  position: relative;
-  width: 33%; }
-
-.collage .img-statue {
-  width: 35%; }
-
-.collage .img-capitol {
-  width: 32%; }
-
-.collage .img-capitol small {
-  top: -3.2em; }
-
-.img-flag-outline {
-  position: absolute;
-  top: 0em;
-  left: 0em; }
-
-.img-flag-outline img {
-  position: relative; }
-
-.img-flag-fuzzy,
-.img-flag-clear {
-  position: absolute;
-  top: 20%;
-  left: 2%; }
