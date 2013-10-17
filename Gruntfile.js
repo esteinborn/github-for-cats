@@ -130,6 +130,8 @@ module.exports = function(grunt) {
       options: {
         base: 'build',
         clone: 'gh-pages',
+        message: 'Publish GH-Pages',
+        // repo: 'https://' + process.env.GH_TOKEN + '@github.com/esteinborn/github-for-cats.git',
         user: {
           name: 'Eric Steinborn',
           email: 'esteinborn@gmail.com'
