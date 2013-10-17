@@ -104,8 +104,40 @@ module.exports = function(grunt) {
 			theme: {
 				files: [ 'css/theme/source/*.scss', 'css/theme/template/*.scss' ],
 				tasks: 'themes'
-			}
-		}
+			},
+      livereload: {
+        files: ['css/reveal.css'],
+        options: {
+          livereload: true
+        }
+      }
+
+		},
+
+    copy: {
+      ghPagesBuild: {
+        files: [{
+        	expand: true,
+        	cwd: '',
+        	src: ['**/*', '!build/**/*', '!gh-pages/**/*', '!.sass-cache', '!.git', '!node_modules/**/*'],
+        	dest: 'build',
+        	filter: 'isFile'
+        }]
+      }
+    },
+
+    'gh-pages': {
+      options: {
+        base: 'build',
+        clone: 'gh-pages',
+        user: {
+          name: 'Eric Steinborn',
+          email: 'esteinborn@gmail.com'
+        }
+      },
+      // These files will get pushed to the `gh-pages` branch (the default).
+      src: ['**/*', '.gitignore']
+    }
 
 	});
 
@@ -117,6 +149,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-sass' );
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-zip' );
+  grunt.loadNpmTasks( 'grunt-gh-pages' );
+  grunt.loadNpmTasks( 'grunt-contrib-copy' );
 
 	// Default task
 	grunt.registerTask( 'default', [ 'sass', 'jshint', 'cssmin', 'uglify' ] );
@@ -129,5 +163,12 @@ module.exports = function(grunt) {
 
 	// Serve presentation locally
 	grunt.registerTask( 'serve', [ 'connect', 'watch' ] );
+
+  grunt.registerTask('pages', 'Production build', function(args) {
+    grunt.task.run([
+    	'copy:ghPagesBuild',
+      'gh-pages'
+    ]);
+  });
 
 };
