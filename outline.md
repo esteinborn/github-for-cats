@@ -51,9 +51,80 @@ Adds a social aspect to coding
  - Clone
  - COmmit
  - Pull (maybe drop in favor of keeping simpler and just do forking)
- - Fork
+ - Fork (Metaphor: photocopying, clone)
 
 ## Creating your First Repo
 
 Create GH account
-GitHub GUI
+Install GitHub GUI (windows and MAc)
+Add Username
+Copy in existing project
+Publish it
+Done
+
+## Creating your SEcond Repo
+
+Copy in existing project
+Publish it
+Done.
+
+## Creating your third repo
+
+Getting the picture?
+
+## GitHub makes VC Easy
+
+Up and running so quickly
+
+## Cloning someone elses repo
+
+GH is social, all code that is made publically available is at your fingertips
+Find jQuery
+CLone jQuery
+Can make changes to it now and use them for yourself
+or make a bug fix and send changes back to them to fix it.
+
+## Keeping Track of changes
+
+ - Committing 101
+    - MEtaphor: Planting a flag in the ground to say this is what this code was like at this point in time.
+    - Have the ability to create new flags, and review flags, and go back to old flags
+ - Make a small change in project
+ - See the change detailed line by line
+ - Commit the changes, and sync back to GH
+    - Notice that commits are on the left line by line and code changes are on the right with diffs clearly displayed (Dont use the term Diff as we havent explained that, go with somethign more concrete)
+
+## Other Useful Features
+
+GitHub isn't just for code, you can use it for documents and images as well. replaces that list of 12 versions of the same document with increasingly long file names (Maybe say this earlier so as to not lose the non-coders right from teh beginning)
+
+Mobile GH
+
+Pulse
+ - Keep track of progress across the code base (How to represent this? "dashboard?"")
+
+Issues
+ - Track bugs
+ - Track feature requests
+ - Notifications
+
+GitHub Pages
+ - Create a branch and see your changes imediately
+
+## Further Resources
+
+[Trygit](http://try.github.io)
+
+[ProGit Book](http://git-scm.com/book)
+
+
+### Possible additions, but are being pulled to the bottom to keep out of sight
+
+Branching
+
+Pull requests on GH
+
+Workflow
+
+Merge Conflicts
+
