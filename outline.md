@@ -6,6 +6,14 @@ __LESS DETAIL MORE IDEA__
 
 _Here is how to get started. Never more than 1 half step ahead of beginner._
 
+## GitHub at a Glance
+
+ - Logo is the Octocat, a cross between a cat and an octopus: http://octodex.github.com/
+ - GitHub provides a medium for programmers to share code.
+ - Github centralizes the distributed VC system.
+ - Create public and private repos, served over https or SSH (Matrix of pub vs priv)
+ - Adds a social aspect to coding
+
 ## What is open source
 
 [open source line from here](http://ben.balter.com/open-source-for-government/)
@@ -13,6 +21,8 @@ _Here is how to get started. Never more than 1 half step ahead of beginner._
 Transparency to the dev process.
 
 ## What is version control?
+
+ - TERMINOLOGY: Repo
 
 AKA Revision control, SOurce COntrol
 
@@ -24,6 +34,8 @@ Lets say you need to write your Final Essay for a class.
 
 ### Using Git for the Essay
 
+ - TERMINOLOGY - Clone, Commit, Pull
+
 Distributed Version Control system built on an open source platform where the files are located at a centralized server but you pull down a local copy and submit patches back to the centralized location with your local modifications
 
  - Now you keep the same file name but can review old versions of the essay from any point in time
@@ -31,24 +43,9 @@ Distributed Version Control system built on an open source platform where the fi
 
 ### Using GitHub for the Essay
 
-GitHub centralizes the distributed system
+ - TERMINOLOGY - Fork
 
  - now you version it and distribute it for free online and anyone in the world can improve your essay now. They can submit fixes or add additional content to make it utterly amazing.
-
-## GitHub Overview
-
- - Logo is the Octocat, a cross between a cat and an octopus: http://octodex.github.com/
- - GitHub provides a medium for programmers to share code.
- - Existence of github means that Git is the best vc system.
- - Create public and prvate repos, served over https or SSH (Matrix of pub vs priv)
- - GitHub is the new standard. So many people are using it and it has become a requirement for many tech jobs
- - Adds a social aspect to coding
- - GitHub isn't just for code, you can use it for documents and images as well. replaces that list of 12 versions of the same document with increasingly long file names
- - You don’t have to take my word on it: Android, jQuery, etc etc
-
-## ITS official stance on GH
-
- - If no official word, its “In the works”
 
 ## Why use GitHub?
 
@@ -61,16 +58,14 @@ GitHub centralizes the distributed system
  - History of Every change to ever file
  - Detailed line by line list of who owns each line of every file "blame log"
  - Offline editing (airplane submarine), keeps a lit of all of your revisions until you are ready to commit
+ - GitHub is the new standard. So many people are using it and it has become a requirement for many tech jobs
  - Fast workflow
+ - GitHub isn't just for code, you can use it for documents and images as well. replaces that list of 12 versions of the same document with increasingly long file names
+ - You don’t have to take my word on it: Android, jQuery, etc etc
 
-## Terminology
+## ITS official stance on GH
 
- - Repo
- - Branch
- - Clone
- - Commit
- - Pull (maybe drop in favor of keeping simpler and just do forking)
- - Fork (Metaphor: photocopying, clone)
+ - If no official word, its “In the works”
 
 ### Quick overview of the site
 
