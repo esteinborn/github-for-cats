@@ -1,42 +1,75 @@
 # GitHub for Cats Outline
 
+_GOAL: If you don't use GH switch to GH, If you don’t use VC you should, and you should use GH_
+__LESS DETAILS MORE IDEALS__
+
+_Here is how to get started. Never more than 1 half step ahead of beginner._
+
+## What is open source
+
+[open source line from here](http://ben.balter.com/open-source-for-government/)
+
+Transparency to the dev process.
+
 ## What is version control?
 
 AKA Revision control, SOurce COntrol
 
-Distributed File system where the files are located at a centralized server but you pull down a local copy and submit patches back to the centralized location with your local modifications
+Lets say you need to write your Final Essay for a class.
 
-### Brief History of Version COntrol
- - Use list of ever longening File names
+### Old Version Control for Essay
+ - Start by versioning the name
+ - Now you have 20 files and you don't know which is which
 
-## What is Git _(very short)_
+### Using Git for the Essay
 
-distributed Version COntrol system built on an open source platform
+Distributed Version Control system built on an open source platform where the files are located at a centralized server but you pull down a local copy and submit patches back to the centralized location with your local modifications
 
-Why is it better? http://thkoch2001.github.io/whygitisbetter and http://git-scm.com/about
+ - Now you keep the same file name but can review old versions of the essay from any point in time
+ - 1 file, with a History
 
-## Why use VC or Git at all?
+### Using GitHub for the Essay
 
+GitHub centralizes the distributed system
+
+ - now you version it and distribute it for free online and anyone in the world can improve your essay now. They can submit fixes or add additional content to make it utterly amazing.
+
+## GitHub Overview
+
+ - Logo is the Octocat, a cross between a cat and an octopus: http://octodex.github.com/
+ - GitHub provides a medium for programmers to share code.
+ - Existence of github means that Git is the best vc system.
+ - Create public and prvate repos, served over https or SSH (Matrix of pub vs priv)
+ - GitHub is the new standard. So many people are using it and it has become a requirement for many tech jobs
+ - Adds a social aspect to coding
+ - GitHub isn't just for code, you can use it for documents and images as well. replaces that list of 12 versions of the same document with increasingly long file names
+ - You don’t have to take my word on it: Android, jQuery, etc etc
+
+## ITS official stance on GH
+
+ - If no official word, its “In the works”
+
+## Why use GitHub?
+
+ - Use Cases for GitHub (Sprints, collaboration etc)
  - No checking files in and out to modify them. Editing the same file simultaneously
- - LOng distance collaboration (Guy from UK that enhanced my plugin)
+ - Long distance collaboration (Guy from UK that enhanced my plugin)
  - Breaks down the silos we've built for years and shares our code with each other and if we choose, the world.
+    - Benefits of Open Source vs Siloed programming.
  - Will make us better coders when we know people are watching.
  - History of Every change to ever file
  - Detailed line by line list of who owns each line of every file "blame log"
  - Offline editing (airplane submarine), keeps a lit of all of your revisions until you are ready to commit
  - Fast workflow
 
-## What is GitHub
+## Terminology
 
-GitHub centralizes the distributed system
-
-Existence of github means that Git is the best vc system.
-
-Create public and prvate repos, served over https or SSH
-
-GitHub is the new standard. So many people are using it and it has become a requirement for many tech jobs
-
-Adds a social aspect to coding
+ - Repo
+ - Branch
+ - Clone
+ - Commit
+ - Pull (maybe drop in favor of keeping simpler and just do forking)
+ - Fork (Metaphor: photocopying, clone)
 
 ### Quick overview of the site
 
@@ -45,32 +78,24 @@ Adds a social aspect to coding
  - Following people
  - More
 
-## Terminology
- - Repo
- - Branch
- - Clone
- - COmmit
- - Pull (maybe drop in favor of keeping simpler and just do forking)
- - Fork (Metaphor: photocopying, clone)
-
 ## Creating your First Repo
 
-Create GH account
-Install GitHub GUI (windows and MAc)
-Add Username
-Copy in existing project
-Publish it
-Done
+ - Create GH account
+ - Install GitHub GUI (windows and MAc)
+ - Add Username
+ - Copy in existing project
+ - Publish it
+ - Done
 
-## Creating your SEcond Repo
+## Creating your Second Repo
 
-Copy in existing project
-Publish it
-Done.
+ - Copy in existing project
+ - Publish it
+ - Done.
 
 ## Creating your third repo
 
-Getting the picture?
+ - Getting the picture?
 
 ## GitHub makes VC Easy
 
@@ -78,17 +103,18 @@ Up and running so quickly
 
 ## Cloning someone elses repo
 
-GH is social, all code that is made publically available is at your fingertips
-Find jQuery
-CLone jQuery
-Can make changes to it now and use them for yourself
-or make a bug fix and send changes back to them to fix it.
+_GH is social, all code that is made publically available is at your fingertips_
+
+ - Find jQuery
+ - CLone jQuery
+ - Can make changes to it now and use them for yourself
+ - or make a bug fix and send changes back to them to fix it.
 
 ## Keeping Track of changes
 
  - Committing 101
-    - MEtaphor: Planting a flag in the ground to say this is what this code was like at this point in time.
-    - Have the ability to create new flags, and review flags, and go back to old flags
+    - Metaphor: A snapshot in time. "This" is what this code was like at this point in time.
+    - Have the ability to create review and revert snapshots
  - Make a small change in project
  - See the change detailed line by line
  - Commit the changes, and sync back to GH
@@ -96,22 +122,28 @@ or make a bug fix and send changes back to them to fix it.
 
 ## Other Useful Features
 
-GitHub isn't just for code, you can use it for documents and images as well. replaces that list of 12 versions of the same document with increasingly long file names (Maybe say this earlier so as to not lose the non-coders right from teh beginning)
+### Issues
 
-Mobile GH
-
-Pulse
- - Keep track of progress across the code base (How to represent this? "dashboard?"")
-
-Issues
  - Track bugs
  - Track feature requests
  - Notifications
 
-GitHub Pages
+### GitHub Pages
+
  - Create a branch and see your changes imediately
 
+### Mobile GH
+
+### Pulse
+
+ - Keep track of progress across the code base (How to represent this? "dashboard?"")
+
+
 ## Further Resources
+
+[Why is it better?](http://thkoch2001.github.io/whygitisbetter)
+
+[Awesome features of Git](http://git-scm.com/about)
 
 [Trygit](http://try.github.io)
 
