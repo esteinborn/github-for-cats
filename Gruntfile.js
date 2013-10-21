@@ -112,35 +112,7 @@ module.exports = function(grunt) {
         }
       }
 
-		},
-
-    copy: {
-      ghPagesBuild: {
-        files: [{
-        	expand: true,
-        	cwd: '',
-        	src: ['**/*', '!build/**/*', '!gh-pages/**/*', '!.sass-cache', '!.git', '!node_modules/**/*'],
-        	dest: 'build',
-        	filter: 'isFile'
-        }]
-      }
-    },
-
-    'gh-pages': {
-      options: {
-        base: 'build',
-        clone: 'gh-pages',
-        message: 'Publish GH-Pages',
-        // repo: 'https://' + process.env.GH_TOKEN + '@github.com/esteinborn/github-for-cats.git',
-        user: {
-          name: 'Eric Steinborn',
-          email: 'esteinborn@gmail.com'
-        }
-      },
-      // These files will get pushed to the `gh-pages` branch (the default).
-      src: ['**/*', '.gitignore']
-    }
-
+		}
 	});
 
 	// Dependencies
@@ -151,8 +123,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-sass' );
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-zip' );
-  grunt.loadNpmTasks( 'grunt-gh-pages' );
-  grunt.loadNpmTasks( 'grunt-contrib-copy' );
 
 	// Default task
 	grunt.registerTask( 'default', [ 'sass', 'jshint', 'cssmin', 'uglify' ] );
@@ -165,12 +135,5 @@ module.exports = function(grunt) {
 
 	// Serve presentation locally
 	grunt.registerTask( 'serve', [ 'connect', 'watch' ] );
-
-  grunt.registerTask('pages', 'Production build', function(args) {
-    grunt.task.run([
-    	'copy:ghPagesBuild',
-      'gh-pages'
-    ]);
-  });
 
 };
