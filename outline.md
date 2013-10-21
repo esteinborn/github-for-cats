@@ -14,12 +14,6 @@ _Here is how to get started. Never more than 1 half step ahead of beginner._
  - Create public and private repos, served over https or SSH (Matrix of pub vs priv)
  - Adds a social aspect to coding
 
-## What is open source
-
-[open source line from here](http://ben.balter.com/open-source-for-government/)
-
-Transparency to the dev process.
-
 ## What is version control?
 
  - TERMINOLOGY: Repo
@@ -49,64 +43,37 @@ Distributed Version Control system built on an open source platform where the fi
 
 ## Why use GitHub?
 
+ - GitHub is the new standard. So many people are using it and it has become a requirement for many tech jobs
+ - Handles large projects with ease
  - Use Cases for GitHub (Sprints, collaboration etc)
  - No checking files in and out to modify them. Editing the same file simultaneously
  - Long distance collaboration (Guy from UK that enhanced my plugin)
  - Breaks down the silos we've built for years and shares our code with each other and if we choose, the world.
     - Benefits of Open Source vs Siloed programming.
  - Will make us better coders when we know people are watching.
- - History of Every change to ever file
- - Detailed line by line list of who owns each line of every file "blame log"
+ - History of Every change to every file
  - Offline editing (airplane submarine), keeps a lit of all of your revisions until you are ready to commit
- - GitHub is the new standard. So many people are using it and it has become a requirement for many tech jobs
  - Fast workflow
  - GitHub isn't just for code, you can use it for documents and images as well. replaces that list of 12 versions of the same document with increasingly long file names
  - You don’t have to take my word on it: Android, jQuery, etc etc
 
-## ITS official stance on GH
+### ITS official stance on GH
 
  - If no official word, its “In the works”
 
-### Quick overview of the site
-
- - Browse repos
- - Stars
- - Following people
- - More
-
-## Creating your First Repo
+## Setup GitHub
 
  - Create GH account
  - Install GitHub GUI (windows and MAc)
  - Add Username
- - Copy in existing project
- - Publish it
- - Done
 
-## Creating your Second Repo
+### Creating a Repo
 
  - Copy in existing project
  - Publish it
  - Done.
 
-## Creating your third repo
-
- - Getting the picture?
-
-## GitHub makes VC Easy
-
-Up and running so quickly
-
-## Cloning someone elses repo
-
-_GH is social, all code that is made publically available is at your fingertips_
-
- - Find jQuery
- - CLone jQuery
- - Can make changes to it now and use them for yourself
- - or make a bug fix and send changes back to them to fix it.
-
-## Keeping Track of changes
+## Making Changes
 
  - Committing 101
     - Metaphor: A snapshot in time. "This" is what this code was like at this point in time.
@@ -116,6 +83,22 @@ _GH is social, all code that is made publically available is at your fingertips_
  - Commit the changes, and sync back to GH
     - Notice that commits are on the left line by line and code changes are on the right with diffs clearly displayed (Dont use the term Diff as we havent explained that, go with somethign more concrete)
 
+### GitHub.com Overview
+
+ - Browse repos
+ - Stars
+ - Following people
+ - More
+
+## Cloning repos
+
+_GH is social, all code that is made publically available is at your fingertips_
+
+ - Find jQuery
+ - CLone jQuery
+ - Can make changes to it now and use them for yourself
+ - or make a bug fix and send changes back to them to fix it.
+
 ## Other Useful Features
 
 ### Issues
@@ -124,16 +107,15 @@ _GH is social, all code that is made publically available is at your fingertips_
  - Track feature requests
  - Notifications
 
+### Pulse
+
+ - Keep track of progress across the code base (How to represent this? "dashboard?"")
+
 ### GitHub Pages
 
  - Create a branch and see your changes imediately
 
 ### Mobile GH
-
-### Pulse
-
- - Keep track of progress across the code base (How to represent this? "dashboard?"")
-
 
 ## Further Resources
 
@@ -156,3 +138,4 @@ Workflow
 
 Merge Conflicts
 
+(FROM WHY GITHUB) - Detailed line by line list of who owns each line of every file "blame log"
