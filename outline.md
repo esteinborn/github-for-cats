@@ -1,7 +1,8 @@
 # GitHub for Cats Outline
 
 _GOAL: If you don't use GH switch to GH, If you don’t use VC you should, and you should use GH_
-__LESS DETAILS MORE IDEALS__
+
+__LESS DETAIL MORE IDEA__
 
 _Here is how to get started. Never more than 1 half step ahead of beginner._
 
