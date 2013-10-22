@@ -10,15 +10,15 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/reveal.min.css">
-	<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+	<link rel="stylesheet" href="css/theme/beige-custom.css" id="theme">
 	<!-- For syntax highlighting -->
 	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 	<script>
   (function() {
-    var printcss = '<link rel="stylesheet" href="css/print/';
-    if (window.location.search.match(/print-pdf/gi)) { printcss += 'pdf'; }
-    else if (window.location.search.match(/print-speaker/gi)) { printcss += 'speaker'; }
-    else { printcss += 'paper'; }
+    var printcss = '<link rel="stylesheet" href="';
+    if (window.location.search.match(/print-pdf/gi)) { printcss += 'css/print/pdf'; }
+    else if (window.location.search.match(/print-speaker/gi)) { printcss += 'css/theme/print-speaker'; }
+    else { printcss += 'css/print/paper'; }
     printcss += '.css" type="text/css" media="print">';
     console.log(printcss);
   	document.write(printcss);
