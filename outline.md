@@ -95,7 +95,6 @@ Distributed Version Control system built on an open source platform where the fi
  - Make a small change in project
  - See the change detailed line by line
  - Commit the changes, and sync back to GH
-    - Notice that commits are on the left line by line and code changes are on the right with diffs clearly displayed (Dont use the term Diff as we havent explained that, go with somethign more concrete)
 
 ## Use Case #2 - DMV RWD Sprint
 
@@ -114,7 +113,7 @@ Distributed Version Control system built on an open source platform where the fi
  - Following people
  - Fork
 
-## Cloning repos
+## Forking repos
 
 _GH is social, all code that is made publically available is at your fingertips_
 
