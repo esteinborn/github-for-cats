@@ -8,6 +8,7 @@ _Here is how to get started. Never more than 1 half step ahead of beginner._
 
 ## GitHub at a Glance
 
+ - GitHub is the new standard (stats)
  - Logo is the Octocat, a cross between a cat and an octopus: http://octodex.github.com/
  - GitHub provides a centralized medium for programmers to share code.
  - Create public and private repos, served over https or SSH (Matrix of pub vs priv)
