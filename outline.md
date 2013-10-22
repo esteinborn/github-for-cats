@@ -42,13 +42,16 @@ Distributed Version Control system built on an open source platform where the fi
 
 ## Why use GitHub?
 
- - GitHub is the new standard. So many people are using it and it has become a requirement for many tech jobs
+ - GitHub is the new standard. So many people are using it and it has become a requirement for many tech jobs 5.5M developers with 16.4M hosted repos featuring a 99.69% uptime
+ - Built-in Project management Tools
+    - Collaboration with permission system
+    - Wikis
+    - Issue Tracking
+    - Code Review
  - Handles large projects with ease
  - No checking files in and out to modify them. Editing the same file simultaneously
  - Long distance collaboration (Guy from UK that enhanced my plugin)
  - Breaks down the silos we've built for years and shares our code with each other and if we choose, the world.
-    - Benefits of Open Source vs Siloed programming.
- - Will make us better coders when we know people are watching.
  - History of Every change to every file
  - Offline editing (airplane submarine), keeps a lit of all of your revisions until you are ready to commit
  - Fast workflow
@@ -117,8 +120,8 @@ Distributed Version Control system built on an open source platform where the fi
 
 _GH is social, all code that is made publically available is at your fingertips_
 
- - Find jQuery
- - CLone jQuery
+ - Find Twitter Bootstrap
+ - Fork it
  - Can make changes to it now and use them for yourself
  - or make a bug fix and send changes back to them to fix it.
 
@@ -164,5 +167,3 @@ Pull requests on GH
 Workflow
 
 Merge Conflicts
-
-(FROM WHY GITHUB) - Detailed line by line list of who owns each line of every file "blame log"
