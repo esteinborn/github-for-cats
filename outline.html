@@ -1,0 +1,290 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+  color:#444;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman',
+              "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 1em;
+  outline: 1300px solid #FAFAFA;
+}
+
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0 3px 0 3px;
+}
+
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+
+p{
+margin:1em 0;
+}
+
+img{
+max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-weight:normal;
+color:#111;
+line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+blockquote{
+color:#666666;
+margin:0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+
+pre , code, kbd, samp { 
+  color: #000; 
+  font-family: monospace; 
+  font-size: 0.88em; 
+  border-radius:3px;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC; 
+}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px 12px;}
+pre code { border: 0px !important; padding: 0;}
+code { padding: 0 3px 0 3px; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+@media only screen and (min-width: 480px) {
+body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+body{font-size:16px;}
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{font-size:12pt; max-width:100%; outline:none;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+</style><title>outline</title></head><body><h1 id="github-for-cats-outline">GitHub for Cats Outline</h1>
+<p><em>GOAL: If you don't use GH switch to GH, If you don’t use VC you should, and you should use GH</em></p>
+<p><strong>LESS DETAIL MORE IDEA</strong></p>
+<p><em>Here is how to get started. Never more than 1 half step ahead of beginner.</em></p>
+<h2 id="github-at-a-glance">GitHub at a Glance</h2>
+<ul>
+<li>Logo is the Octocat, a cross between a cat and an octopus: http://octodex.github.com/</li>
+<li>GitHub provides a centralized medium for programmers to share code.</li>
+<li>Create public and private repos, served over https or SSH (Matrix of pub vs priv)</li>
+<li>Adds a social aspect to coding</li>
+</ul>
+<h2 id="what-is-version-control">What is version control?</h2>
+<ul>
+<li>TERMINOLOGY: Repo</li>
+</ul>
+<p>AKA Revision control, SOurce COntrol</p>
+<p>Lets say you need to write your Final Essay for a class.</p>
+<h3 id="old-version-control-for-essay">Old Version Control for Essay</h3>
+<ul>
+<li>Start by versioning the name</li>
+<li>Now you have 20 files and you don't know which is which</li>
+</ul>
+<h3 id="using-git-for-the-essay">Using Git for the Essay</h3>
+<ul>
+<li>TERMINOLOGY - Clone, Commit, Pull</li>
+</ul>
+<p>Distributed Version Control system built on an open source platform where the files are located at a centralized server but you pull down a local copy and submit patches back to the centralized location with your local modifications</p>
+<ul>
+<li>Now you keep the same file name but can review old versions of the essay from any point in time</li>
+<li>1 file, with a History</li>
+</ul>
+<h3 id="using-github-for-the-essay">Using GitHub for the Essay</h3>
+<ul>
+<li>
+<p>TERMINOLOGY - Fork</p>
+</li>
+<li>
+<p>now you version it and distribute it for free online and anyone in the world can improve your essay now. They can submit fixes or add additional content to make it utterly amazing.</p>
+</li>
+</ul>
+<h2 id="why-use-github">Why use GitHub?</h2>
+<ul>
+<li>GitHub is the new standard. So many people are using it and it has become a requirement for many tech jobs 5.5M developers with 16.4M hosted repos featuring a 99.69% uptime</li>
+<li>Built-in Project management Tools<ul>
+<li>Collaboration with permission system</li>
+<li>Wikis</li>
+<li>Issue Tracking</li>
+<li>Code Review</li>
+</ul>
+</li>
+<li>Handles large projects with ease</li>
+<li>No checking files in and out to modify them. Editing the same file simultaneously</li>
+<li>Long distance collaboration (Guy from UK that enhanced my plugin)</li>
+<li>Breaks down the silos we've built for years and shares our code with each other and if we choose, the world.</li>
+<li>History of Every change to every file</li>
+<li>Offline editing (airplane submarine), keeps a lit of all of your revisions until you are ready to commit</li>
+<li>Fast workflow</li>
+<li>GitHub isn't just for code, you can use it for documents and images as well. replaces that list of 12 versions of the same document with increasingly long file names</li>
+<li>You don’t have to take my word on it: Android, jQuery, etc etc</li>
+</ul>
+<h3 id="its-official-stance-on-gh">ITS official stance on GH</h3>
+<ul>
+<li>If no official word, its “In the works”</li>
+</ul>
+<h2 id="use-case-1-rwd-sprint">Use Case #1 - RWD Sprint</h2>
+<ul>
+<li>3 Weeks full time</li>
+<li>Collaborators = 10</li>
+<li>Commits = 1700</li>
+<li>Issues = 899</li>
+</ul>
+<h2 id="setup-github">Setup GitHub</h2>
+<ul>
+<li>Create GH account</li>
+<li>Install GitHub GUI (windows)<ul>
+<li>Add Username</li>
+</ul>
+</li>
+<li>GUI Overview<ul>
+<li>Categories</li>
+<li>Local category</li>
+<li>GitHub Username Category</li>
+<li>Repo list</li>
+<li>Repo Screen</li>
+<li>Commits</li>
+<li>Diffs</li>
+<li>Sync</li>
+</ul>
+</li>
+</ul>
+<h3 id="creating-a-repo">Creating a Repo</h3>
+<ul>
+<li>Copy in existing project</li>
+<li>Publish it</li>
+<li>Done.</li>
+</ul>
+<h2 id="making-changes">Making Changes</h2>
+<ul>
+<li>Committing 101<ul>
+<li>Metaphor: A snapshot in time. "This" is what this code was like at this point in time.</li>
+<li>Have the ability to create review and revert snapshots</li>
+</ul>
+</li>
+<li>Make a small change in project</li>
+<li>See the change detailed line by line</li>
+<li>Commit the changes, and sync back to GH</li>
+</ul>
+<h2 id="use-case-2-dmv-rwd-sprint">Use Case #2 - DMV RWD Sprint</h2>
+<ul>
+<li>2 Days full time, 1 week part time.</li>
+<li>8 Collaborators</li>
+<li>256 Commits</li>
+<li>278 Issues Closed</li>
+<li>Deliverables:<ul>
+<li>fully responsive Registration Renewal Application</li>
+</ul>
+</li>
+</ul>
+<h3 id="github-com-overview">GitHub.com Overview</h3>
+<ul>
+<li>News Feed</li>
+<li>Browse repos<ul>
+<li>Stars</li>
+</ul>
+</li>
+<li>Following people</li>
+<li>Fork</li>
+</ul>
+<h2 id="forking-repos">Forking repos</h2>
+<p><em>GH is social, all code that is made publically available is at your fingertips</em></p>
+<ul>
+<li>Find Twitter Bootstrap</li>
+<li>Fork it</li>
+<li>Can make changes to it now and use them for yourself</li>
+<li>or make a bug fix and send changes back to them to fix it.</li>
+</ul>
+<h2 id="other-useful-features">Other Useful Features</h2>
+<h3 id="issues">Issues</h3>
+<ul>
+<li>New Issue</li>
+<li>Track bugs</li>
+<li>Track feature requests</li>
+<li>Notifications</li>
+</ul>
+<h3 id="pulse">Pulse</h3>
+<ul>
+<li>Overview of activity of repo over time<ul>
+<li>Requests to modify code (pull requests)</li>
+<li>Open/closed isses</li>
+<li>Graph of individual contributions</li>
+</ul>
+</li>
+</ul>
+<h3 id="github-pages">GitHub Pages</h3>
+<ul>
+<li>Create a branch and see your changes imediately</li>
+</ul>
+<h3 id="mobile-gh">Mobile GH</h3>
+<h2 id="further-resources">Further Resources</h2>
+<p><a href="http://thkoch2001.github.io/whygitisbetter">Why is it better?</a></p>
+<p><a href="http://git-scm.com/about">Awesome features of Git</a></p>
+<p><a href="http://try.github.io">Trygit</a></p>
+<p><a href="http://git-scm.com/book">ProGit Book</a></p>
+<h3 id="possible-additions-but-are-being-pulled-to-the-bottom-to-keep-out-of-sight">Possible additions, but are being pulled to the bottom to keep out of sight</h3>
+<p>Branching</p>
+<p>Pull requests on GH</p>
+<p>Workflow</p>
+<p>Merge Conflicts</p></body></html>
