@@ -9,8 +9,7 @@ _Here is how to get started. Never more than 1 half step ahead of beginner._
 ## GitHub at a Glance
 
  - Logo is the Octocat, a cross between a cat and an octopus: http://octodex.github.com/
- - GitHub provides a medium for programmers to share code.
- - Github centralizes the distributed VC system.
+ - GitHub provides a centralized medium for programmers to share code.
  - Create public and private repos, served over https or SSH (Matrix of pub vs priv)
  - Adds a social aspect to coding
 
@@ -45,7 +44,6 @@ Distributed Version Control system built on an open source platform where the fi
 
  - GitHub is the new standard. So many people are using it and it has become a requirement for many tech jobs
  - Handles large projects with ease
- - Use Cases for GitHub (Sprints, collaboration etc)
  - No checking files in and out to modify them. Editing the same file simultaneously
  - Long distance collaboration (Guy from UK that enhanced my plugin)
  - Breaks down the silos we've built for years and shares our code with each other and if we choose, the world.
@@ -61,11 +59,27 @@ Distributed Version Control system built on an open source platform where the fi
 
  - If no official word, its “In the works”
 
+## Use Case #1 - RWD Sprint
+
+ - 3 Weeks full time
+ - Collaborators = 10
+ - Commits = 1700
+ - Issues = 899
+
 ## Setup GitHub
 
  - Create GH account
- - Install GitHub GUI (windows and MAc)
- - Add Username
+ - Install GitHub GUI (windows)
+    - Add Username
+ - GUI Overview
+    - Categories
+      - Local category
+      - GitHub Username Category
+      - Repo list
+    - Repo Screen
+      - Commits
+      - Diffs
+      - Sync
 
 ### Creating a Repo
 
@@ -83,12 +97,22 @@ Distributed Version Control system built on an open source platform where the fi
  - Commit the changes, and sync back to GH
     - Notice that commits are on the left line by line and code changes are on the right with diffs clearly displayed (Dont use the term Diff as we havent explained that, go with somethign more concrete)
 
+## Use Case #2 - DMV RWD Sprint
+
+ - 2 Days full time, 1 week part time.
+ - 8 Collaborators
+ - 256 Commits
+ - 278 Issues Closed
+ - Deliverables:
+    - fully responsive Registration Renewal Application
+
 ### GitHub.com Overview
 
+ - News Feed
  - Browse repos
- - Stars
+    - Stars
  - Following people
- - More
+ - Fork
 
 ## Cloning repos
 
@@ -103,13 +127,17 @@ _GH is social, all code that is made publically available is at your fingertips_
 
 ### Issues
 
+ - New Issue
  - Track bugs
  - Track feature requests
  - Notifications
 
 ### Pulse
 
- - Keep track of progress across the code base (How to represent this? "dashboard?"")
+ - Overview of activity of repo over time
+     - Requests to modify code (pull requests)
+     - Open/closed isses
+     - Graph of individual contributions
 
 ### GitHub Pages
 
