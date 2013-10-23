@@ -16,7 +16,7 @@ _Here is how to get started. Never more than 1 half step ahead of beginner._
 
 ## What is version control?
 
- - TERMINOLOGY: Repo
+ - TERMINOLOGY: Repo - Project
 
 AKA Revision control, SOurce COntrol
 
