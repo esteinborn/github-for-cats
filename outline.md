@@ -1,4 +1,4 @@
-# GitHub for Cats Outline
+# GitHub for Cats Presentation Outline
 
 _GOAL: If you don't use GH switch to GH, If you don’t use VC you should, and you should use GH_
 
