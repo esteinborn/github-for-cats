@@ -71,6 +71,7 @@ __Using GitHub for the Essay__
  - GitHub isn't just for code, you can use it for documents and images as well. replaces that list of 12 versions of the same document with increasingly long file names
  - You don’t have to take my word on it: Android, jQuery, etc etc
 
+[Probably drop ITS as a slide]
 __ITS official stance on GH__
 
  - If no official word, its “In the works”
