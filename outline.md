@@ -1,6 +1,10 @@
 # GitHub for Cats Presentation Outline
 
-_GOAL: If you don't use GH switch to GH, If you don’t use VC you should, and you should use GH_
+_CORE: Start Using GitHub Today_
+
+_LEAD: Teams that use GitHub unlock their true collaborative potential_
+
+_Question: How can using GitHub benefit me and my team?_
 
 __LESS DETAIL MORE IDEAS__
 
@@ -8,7 +12,10 @@ _Here is how to get started. Never more than 1 half step ahead of beginner._
 
 ## GitHub at a Glance
 
- - GitHub is the new standard (stats) 5.5 mil users etc
+ - GitHub is the new standard. So many people are using it and it has become a requirement for many tech jobs
+    - 5.5M developers
+    - 16.4M hosted projects
+    - Site features a 99.69% uptime.
  - Logo is the Octocat, a cross between a cat and an octopus: http://octodex.github.com/
  - GitHub provides a centralized medium for programmers to share code.
  - Create public and private repos, served over https or SSH (Matrix of pub vs priv)
@@ -16,34 +23,40 @@ _Here is how to get started. Never more than 1 half step ahead of beginner._
 
 ## What is version control?
 
- - TERMINOLOGY: Repo - Project
+_"A brief, and vastly incomplete history of Version Control Throughout the ages"_
 
 AKA Revision control, SOurce COntrol
 
 Lets say you need to write your Final Essay for a class.
 
-### Old Version Control for Essay
+__Old Version Control for Essay__
+
+_"In the beginning.."_
+
+ - __TERMINOLOGY:__ Repo
+
  - Start by versioning the name
  - Now you have 20 files and you don't know which is which
 
-### Using Git for the Essay
+__Using Git for the Essay__
 
- - TERMINOLOGY - Clone, Commit, Pull
+_Distributed Version Control system built on an open source platform where the files are located at a centralized server but you pull down a local copy and submit patches back to the centralized location with your local modifications_
 
-Distributed Version Control system built on an open source platform where the files are located at a centralized server but you pull down a local copy and submit patches back to the centralized location with your local modifications
+ - __TERMINOLOGY:__ Clone, Commit, Pull _(Schema: Photocopying)_
 
  - Now you keep the same file name but can review old versions of the essay from any point in time
  - 1 file, with a History
 
-### Using GitHub for the Essay
+__Using GitHub for the Essay__
 
- - TERMINOLOGY - Fork
+ - __TERMINOLOGY:__ Fork
 
- - now you version it and distribute it for free online and anyone in the world can improve your essay now. They can submit fixes or add additional content to make it utterly amazing.
+ - You distribute it for free online
+ - Anyone in the world can improve your essay now
+ - They can submit fixes or add additional content to make it utterly amazing.
 
 ## Why use GitHub?
 
- - GitHub is the new standard. So many people are using it and it has become a requirement for many tech jobs 5.5M developers with 16.4M hosted repos featuring a 99.69% uptime
  - Built-in Project management Tools
     - Collaboration with permission system
     - Wikis
@@ -52,14 +65,13 @@ Distributed Version Control system built on an open source platform where the fi
  - Handles large projects with ease
  - No checking files in and out to modify them. Editing the same file simultaneously
  - Long distance collaboration (Guy from UK that enhanced my plugin)
- - Breaks down the silos we've built for years and shares our code with each other and if we choose, the world.
  - History of Every change to every file
  - Offline editing (airplane submarine), keeps a lit of all of your revisions until you are ready to commit
  - Fast workflow
  - GitHub isn't just for code, you can use it for documents and images as well. replaces that list of 12 versions of the same document with increasingly long file names
  - You don’t have to take my word on it: Android, jQuery, etc etc
 
-### ITS official stance on GH
+__ITS official stance on GH__
 
  - If no official word, its “In the works”
 
@@ -69,6 +81,10 @@ Distributed Version Control system built on an open source platform where the fi
  - Collaborators = 10
  - Commits = 1700
  - Issues = 899
+ - Deliverables:
+    - Alpha version of a RWD framework
+    - Getting started with RWD website
+    - Demos of useful RWD techinques
 
 ## Setup GitHub
 
@@ -123,17 +139,18 @@ _GH is social, all code that is made publically available is at your fingertips_
 
  - Find Twitter Bootstrap
  - Fork it
+ - View in GHW
  - Can make changes to it now and use them for yourself
  - or make a bug fix and send changes back to them to fix it.
 
-## Other Useful Features
+## Other Useful Features for Teams
 
-### Issues
+### Issue Tracker
 
  - New Issue
  - Track bugs
  - Track feature requests
- - Notifications
+ - Get Notifications from all issues, comments, closing, re-opening
 
 ### Pulse
 
@@ -142,11 +159,13 @@ _GH is social, all code that is made publically available is at your fingertips_
      - Open/closed isses
      - Graph of individual contributions
 
-### GitHub Pages
+## Google these Advanced Techniques
 
- - Create a branch and see your changes imediately
-
-### Mobile GH
+ - [Pull Requests](https://help.github.com/articles/using-pull-requests)
+ - [Branching Workflows](https://www.atlassian.com/git/workflows)
+ - [GitHub Pages](http://pages.github.com/)
+ - [Mobile GH](https://github.com/blog/1559-github-s-on-your-phone)
+ - [Merge Conflicts](http://www.gitguys.com/topics/merging-with-a-conflict-conflicts-and-resolutions/)
 
 ## Further Resources
 
@@ -157,14 +176,3 @@ _GH is social, all code that is made publically available is at your fingertips_
 [Trygit](http://try.github.io)
 
 [ProGit Book](http://git-scm.com/book)
-
-
-### Possible additions, but are being pulled to the bottom to keep out of sight
-
-Branching
-
-Pull requests on GH
-
-Workflow
-
-Merge Conflicts
