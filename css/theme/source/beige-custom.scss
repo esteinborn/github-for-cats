@@ -28,6 +28,7 @@
 
 // Override theme settings (see ../template/settings.scss)
 $mainColor: #333;
+$colorLighter: lighten($mainColor, 15%);
 $headingColor: #333;
 $headingTextShadow: none;
 $backgroundColor: #f7f3de;
@@ -47,3 +48,11 @@ $headingTextTransform: none;
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal {
+
+  .color-lighter {
+    color: $colorLighter;
+  }
+
+}
