@@ -143,3 +143,6 @@ body {
 
 .reveal .color-lighter {
   color: #595959; }
+.reveal li,
+.reveal p {
+  line-height: 1.5em; }

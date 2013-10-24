@@ -129,16 +129,16 @@ __ITS official stance on GH__
 ### GitHub.com Overview
 
  - News Feed
- - Browse repos
-    - Stars
  - Following people
+ - Repo Page
+ - Staring and Watching Repos
  - Fork
 
 ## Forking repos
 
 _GH is social, all code that is made publically available is at your fingertips_
 
- - Find Twitter Bootstrap
+ - Find jQuery ListNav
  - Fork it
  - View in GHW
  - Can make changes to it now and use them for yourself
