@@ -141,8 +141,15 @@ body {
   -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
+.reveal .superhuge {
+  font-size: 7.5em; }
+.reveal .bright-text {
+  color: #EEE; }
 .reveal .color-lighter {
   color: #595959; }
 .reveal li,
 .reveal p {
   line-height: 1.5em; }
+
+#notes p {
+  margin: 0.25em 0; }

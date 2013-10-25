@@ -50,6 +50,13 @@ $headingTextTransform: none;
 // ---------------------------------------------
 
 .reveal {
+  .superhuge {
+    font-size:7.5em;
+  }
+
+  .bright-text {
+    color:#EEE;
+  }
 
   .color-lighter {
     color: $colorLighter;
@@ -60,4 +67,10 @@ $headingTextTransform: none;
     line-height: 1.5em;
   }
 
+}
+
+#notes {
+  p {
+    margin: 0.25em 0;
+  }
 }
