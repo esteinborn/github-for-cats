@@ -50,6 +50,13 @@ $headingTextTransform: none;
 // ---------------------------------------------
 
 .reveal {
+  .superhuge {
+    font-size:7.5em;
+  }
+
+  .bright-text {
+    color:#EEE;
+  }
 
   .color-lighter {
     color: $colorLighter;
@@ -60,4 +67,83 @@ $headingTextTransform: none;
     line-height: 1.5em;
   }
 
+  .no-shadow,
+  .no-shadow img {
+    box-shadow: none;
+  }
+
+  .no-border,
+  .no-border p,
+  .no-border img {
+    border: 0;
+  }
+
+}
+
+#notes {
+  p {
+    margin: 0.25em 0;
+  }
+}
+
+// 3D Scrolling Star Wars Effect:
+#titles
+{
+  position: absolute;
+  width: 30em;
+  height: 18em;
+  bottom: -608px;
+  left: -6%;
+  xmargin-left: -9em;
+  xfont-size: 350%;
+  text-align: justify;
+  overflow: hidden;
+}
+
+#titles:after
+{
+  position: absolute;
+  content: ' ';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 60%;
+  pointer-events: none;
+}
+
+.titlecontent
+{
+  position: absolute;
+  top: 100%;
+  -webkit-animation: scroll 30s linear 1s infinite;
+  -moz-animation: scroll 30s linear 1s infinite;
+  -ms-animation: scroll 30s linear 1s infinite;
+  -o-animation: scroll 30s linear 1s infinite;
+  animation: scroll 30s linear 1s infinite;
+}
+
+/* animation */
+@-webkit-keyframes scroll {
+  0% { top: 100%; }
+  100% { top: -280%; }
+}
+
+@-moz-keyframes scroll {
+  0% { top: 100%; }
+  100% { top: -280%; }
+}
+
+@-ms-keyframes scroll {
+  0% { top: 100%; }
+  100% { top: -280%; }
+}
+
+@-o-keyframes scroll {
+  0% { top: 100%; }
+  100% { top: -280%; }
+}
+
+@keyframes scroll {
+  0% { top: 100%; }
+  100% { top: -280%; }
 }
