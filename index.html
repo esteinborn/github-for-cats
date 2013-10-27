@@ -385,115 +385,91 @@
         <aside class="notes">
           <p>This animation shows you just how easy it is.</p>
           <p>it's literally a drag and drop operation to turn any existing project into a GitHub repo.</p>
-          <p>just give it a name &raquo;</p>
+          <p>We'll create a new repo from a project we've been working on about Kittens</p>
+          <p>After you drag the folder into GHW, you'll get prompted to fill in some information about it &raquo;</p>
         </aside>
       </section>
       <section>
-        <h2>Name it and You're Done</h2>
+        <h2>Name it</h2>
         <p><img src="img/gh-windows-11.png" alt=""></p>
         <aside class="notes">
-          <p>We'll come up with a good name for our repo, we'll call it, Kittens since it features a cool picture of kittens.</p>
+          <p>We'll come up with a good name for our repo, we'll call it, Kittens.</p>
           <p>Here you can decide if you want to push it to gitHub immediately or not, I'll say no this time, and show you how to do it in the GUI.</p>
+          <p>It's that simple to create a new project on GitHub, let's take a look at how the program works and see our repo now.</p>
         </aside>
       </section>
       <section>
         <h2>GUI Home Screen</h2>
         <p><img src="img/gh-windows-02.png" alt=""></p>
         <aside class="notes">
-          <p>So now we have our Repository created in the application</p>
-        </aside>
-      </section>
-      <section>
-        <h2>Local Repo List</h2>
-        <p><img src="img/gh-windows-04.png" alt=""></p>
-        <aside class="notes">
-          <p>you can see it listed on the right side of the screen when we have selected our local repositores category</p>
-          <p>Local category lists any repositories that you have made copies of on your local machine</p>
-          <p>repos that are not locally downloaded yet are listed in a different place</p>
+          <p>This is the screen you'll be presented with when you start the application.</p>
         </aside>
       </section>
       <section>
         <h2>GitHub Repo List</h2>
         <p><img src="img/gh-windows-03.png" alt=""></p>
         <aside class="notes">
-          <p>click your username to see any repositories already  hosted on GitHub.</p>
+          <p>Clicking on your username under the "GitHub" category will show you any repo that you haven't cloned yet</p>
+          <p>The list on the right is populated with any repositories that you have created or forked on GitHub</p>
           <p>double click a repo in this list to clone that repo onto your local machine.</p>
-          <p>if you are a member of an organization, you will see a separate list for each organization.</p>
-          <p>Lets amke a small change to the new project</p>
+          <p>Once a repo has been cloned locally it will be located here and under the Local category</p>
         </aside>
       </section>
       <section>
-        <h2>Committing 101</h2>
+        <h2>Local Repo List</h2>
+        <p><img src="img/gh-windows-04.png" alt=""></p>
+        <aside class="notes">
+          <p>When you select "repositories" under the "local" category, the right side of the screen displays a list of any local repos.</p>
+          <p>To be a local repo, you must have either not synced it to GitHub yet, like our kittens repo, or you have cloned it to your local computer from GitHub.</p>
+          <p>Let's take a look at our Kittens repo now. WE'll double click on the Kittens repo and we'll be brought to the repo screen.</p>
+        </aside>
+      </section>
+      <section>
+        <h2>Committing</h2>
         <p><img src="img/gh-windows-12.png" alt=""></p>
         <aside class="notes">
-          <p>Make a small change in the text file</p>
-        </aside>
-      </section>
-      <section>
-        <h2>See Changes in Detail</h2>
-        <p><img src="img/gh-windows-13.png" alt=""></p>
-        <aside class="notes">
-          <p>diff in GHW</p>
-        </aside>
-      </section>
-      <section>
-        <h2>Add Commit Message</h2>
-        <p><img src="img/gh-windows-14.png" alt=""></p>
-        <aside class="notes">
-          <p>commit message</p>
-        </aside>
-      </section>
-      <section>
-        <h2>Repo Screen</h2>
-        <p><img src="img/gh-windows-05.png" alt=""></p>
-        <aside class="notes">
-          <p>You'll be brought to a screen dedicated to your repo.</p>
-          <p>add a new commit box, the list of commits, the differences panel and the command bar </p>
-        </aside>
-      </section>
-      <section>
-        <h2>Commit Message</h2>
-        <p><img src="img/gh-windows-07.png" alt=""></p>
-        <aside class="notes">
-          <p>When you make a change to a file in your project, You'll see this light gray box on the top left.</p>
-          <p>Inside that, you'll enter a short description about the changes you made, and you'll click the commit button to apply those changes to a local commit.</p>
+          <p>So we created this Kittens repo, but we havent pushed it to GitHub yet. Let's do that now.</p>
+          <p>On the repo screen you'll see a box on the top left that tells us that we havent committed the new repo to the server yet.</p>
+          <p>We'll need to provide a short message indicating the changes we made.</p>
+          <p>Since this is the first time we're pushing this to GitHub I prefer to just make that message "Initial Commit" and click the commit button at the bottom of that box.</p>
         </aside>
       </section>
       <section>
         <h2>Commit List</h2>
         <p><img src="img/gh-windows-06.png" alt=""></p>
         <aside class="notes">
-          <p>after makign a commit, you'll notice that it gets added to the top of the commit list.</p>
+          <p>after makign the commit, we'll notice that it gets added to the top of the commit list.</p>
           <p>this list allows you to click on different commits throughout the project's lifespan and see all of the changes that commit featured.</p>
-          <p>speaking of changes</p>
+          <p>We only see one for now, but each additional commit would get stacked on top of our initial commit</p>
         </aside>
       </section>
       <section>
-        <h2>Differences List </h2>
+        <h2>Differences List</h2>
         <p><img src="img/gh-windows-08.png" alt=""></p>
         <aside class="notes">
-          <p>the differences list or DIFF list is where those changes are laid out for you.</p>
+          <p>When you click each commit, youll see a line by line detailed list of changes associated with that commit on the right side of the screen.</p>
+          <p>That is called the The differences list or DIFF list</p>
           <p>Lines that were changed will show up with a red background and the original code that was on that line</p>
           <p>below it you'll see a line of text with a green background detailing the newly added or changed code</p>
           <p>You'll be able to see your changes line by line</p>
-          <p>once you've decided that you want to push your local commits back to GitHub...</p>
+          <p>Let's push this baby to GitHub now!</p>
         </aside>
       </section>
       <section>
-        <h2>Command Bar</h2>
+        <h2>Making Magic</h2>
         <p><img src="img/gh-windows-09.png" alt=""></p>
         <aside class="notes">
-          <p>You'll want to take note of the top right of the window and see the Command bar.</p>
-          <p>This is where all the magic happens to communicate with GitHub.</p>
-          <p>Press that Sync button and you'll send all your local changes to GitHub</p>
-          <p>So now that we know how to send those changes</p>
+          <p>The top right of the window features the button that makes all the GitHub magic happen.</p>
+          <p>Press that "Push to GitHub" button and you'll send all your local changes to GitHub</p>
+          <p>When dealing with repos that have already been pushed to GitHub...</p>
         </aside>
       </section>
       <section>
-        <h2>Sync Back to GitHub</h2>
-        <p><img src="img/gh-windows-14.png" alt=""></p>
+        <h2>Making Magic</h2>
+        <p><img src="img/gh-windows-09.png" alt=""></p>
         <aside class="notes">
-          <p>Sync button press</p>
+          <p>That button icon and title will change to a double arrow button and the text will say Sync if you need to sync your changes to GitHub.</p>
+          <p>And it will say "in Sync" when your local copy is in sync with the server copy.</p>
         </aside>
       </section>
       <section>
