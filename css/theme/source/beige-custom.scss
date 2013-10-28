@@ -59,6 +59,7 @@ $headingTextTransform: none;
 
   h1 {
     font-size: 2.25em;
+    text-shadow: $heading1TextShadow;
   }
 
   p {
@@ -70,6 +71,7 @@ $headingTextTransform: none;
   }
 
   .bottom {
+    width:100%;
     position: absolute;
     bottom: 0;
   }
