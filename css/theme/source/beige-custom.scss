@@ -49,6 +49,37 @@ $headingTextTransform: none;
 @import "../template/theme";
 // ---------------------------------------------
 
+.install {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fbf8e7;
+  font-family: "Arial";
+  text-align: center;
+
+  h1 {
+    font-size: 2.25em;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    padding-bottom: 3em;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+  }
+
+}
+
+.hidden {
+  display: none;
+}
+
 .reveal {
   .superhuge {
     font-size:7.5em;
@@ -98,6 +129,12 @@ $headingTextTransform: none;
 
   .workflow-image {
     width: 60%;
+  }
+
+  .grayscale {
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   }
 
 }
