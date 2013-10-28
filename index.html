@@ -41,7 +41,7 @@
     <h2>By Eric Steinborn</h2>
     <div class="bottom">
       <p><img src="img/forcats.jpg" width="320px" alt=""></p>
-      <p><a href="#" class="override">Override Install message</a></p>
+      <p><a href="?overrideinstaller" class="override">Override Install message</a></p>
       <p>Tap this icon and <strong>Add to Home Screen</strong></p>
       <p>&#x25BC;</p>
     </div>
@@ -49,17 +49,19 @@
   </div>
 	<div class="reveal" id="reveal">
     <script>
-    var homescreenInstaller = function(){
-    if (window.navigator.userAgent.indexOf('iPhone') != -1) {
-      if (window.navigator.standalone != true) {
-        var install = document.getElementById("install"),
-            slideshow = document.getElementById("reveal");
+      if (!window.location.search.match(/overrideinstaller/gi)) {
+        var homescreenInstaller = function(){
+          if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+            if (window.navigator.standalone != true) {
+              var install = document.getElementById("install"),
+                  slideshow = document.getElementById("reveal");
 
-        install.classList.remove("hidden");
-        reveal.classList.add("hidden");
+              install.classList.remove("hidden");
+              reveal.classList.add("hidden");
+            }
+          }
+        }();
       }
-    }
-  }();
       // homescreenInstaller();
     </script>
 		<!-- Any section element inside of this container is displayed as a slide -->
@@ -856,24 +858,24 @@
     playertwo = new YT.Player('playertwo');
   }
 
-  var overrideInstaller = function(){
-    var install = document.getElementById("install"),
-        slideshow = document.getElementById("reveal");
+  // var overrideInstaller = function(){
+  //   var install = document.getElementById("install"),
+  //       slideshow = document.getElementById("reveal");
 
-    install.classList.add("hidden");
-    reveal.classList.remove("hidden");
-  }
+  //   install.classList.add("hidden");
+  //   reveal.classList.remove("hidden");
+  // }
 
-  var overrideLink = document.querySelectorAll(".override");
+  // var overrideLink = document.querySelectorAll(".override");
 
-  for (var i = 0; i < overrideLink.length; i++) {
-    overrideLink[i].addEventListener("click", function(event) {
-      console.log("hit");
-      event.returnValue = false;
-      event.preventDefault();
-      overrideInstaller();
-    }, false);
-  }
+  // for (var i = 0; i < overrideLink.length; i++) {
+  //   overrideLink[i].addEventListener("click", function(event) {
+  //     console.log("hit");
+  //     event.returnValue = false;
+  //     event.preventDefault();
+  //     overrideInstaller();
+  //   }, false);
+  // }
 
 	</script>
 </body>
