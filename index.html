@@ -38,7 +38,7 @@
     playertwo = new YT.Player('playertwo');
   }
   var homescreenInstaller = function(){
-    if (window.navigator.userAgent.indexOf('iPhone') === -1) {
+    if (window.navigator.userAgent.indexOf('iPhone') != -1) {
       if (window.navigator.standalone != true) {
         var install = document.getElementById("install"),
             slideshow = document.getElementById("reveal");
