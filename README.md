@@ -2,7 +2,7 @@
 
 ### What
 
-Presented for [New York State Forum](http://www.nysforum.org/) at **[GitHub for Cats!](http://www.nysforum.org/events/)**
+Presented for [New York State Forum](http://www.nysforum.org/) at **[GitHub for Cats!](http://www.nysforum.org/events/calendar/events.aspx?date=11%2f1%2f2013)**
 
 [Print This Presentation](http://esteinborn.github.io/github-for-cats/?print-pdf) - After clicking this link, just click print in your browser.
 
