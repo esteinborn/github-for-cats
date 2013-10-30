@@ -12,21 +12,25 @@
 
 			#notes {
 				font-size: 24px;
-				width: 640px;
+				xwidth: 640px;
 				margin-top: 5px;
 				clear: left;
 			}
 
+			#notes p {
+				margin:0.5em 0;
+			}
+
 			#wrap-current-slide {
-				width: 640px;
-				height: 512px;
+				width: 540px;
+				height: 412px;
 				float: left;
 				overflow: hidden;
 			}
 
 			#current-slide {
-				width: 1280px;
-				height: 1024px;
+				width: 1080px;
+				height: 830px;
 				border: none;
 
 				-webkit-transform-origin: 0 0;
@@ -139,7 +143,7 @@
 	<body>
 
 		<div id="wrap-current-slide" class="slides">
-			<script>document.write( '<iframe width="1280" height="1024" id="current-slide" src="'+ window.opener.location.href +'?receiver"></iframe>' );</script>
+			<script>document.write( '<iframe width="1080" height="830" id="current-slide" src="'+ window.opener.location.href +'?receiver"></iframe>' );</script>
 		</div>
 
 		<div id="wrap-next-slide" class="slides">
