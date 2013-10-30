@@ -106,7 +106,7 @@
       <section>
         <h2>Why call it "GitHub for Cats?"</h2>
         <p>GitHub's mascot is a cross between an Octopus and a Cat</p>
-        <p><img class=" no-border no-shadow" src="img/original.png" height="300px" alt="octocat"><img class="fragment no-border no-shadow" height="300px" src="img/jean-luc-picat.png" alt="octocat"><img class="fragment no-border no-shadow" height="300px" src="img/ironcat.png" alt="octocat"></p>
+        <p><img class=" no-border no-shadow" style="padding-right:10px" src="img/original.png" height="300px" alt="octocat"><img class="fragment no-border no-shadow" style="padding-right:10px" height="300px" src="img/jean-luc-picat.png" alt="octocat"><img class="fragment no-border no-shadow" style="padding-right:10px" height="300px" src="img/ironcat.png" alt="octocat"></p>
         <p><a href="http://octodex.github.com/">View the Octodex</a></p>
         <aside class="notes">
           <p>Their mascot is a cross between a cat and an octopus, an octocat</p>
@@ -128,14 +128,14 @@
         </aside>
       </section>
       <section>
-        <h2>New Standard in Version Control</h2>
+        <h2>GitHub is the De Facto Standard</h2>
         <ul>
           <li>5.5 million developers</li>
           <li>16.4 million hosted projects</li>
           <li>Running a 99.96% uptime</li>
         </ul>
         <aside class="notes">
-          <p>gitHub is home to millions of developers hosting tens of millions of projects, hosted on a system that just won't quit</p>
+          <p>gitHub is home to millions of developers hosting over 10 million projects, featuring an uptime just won't quit</p>
           <p>Many job applications list GitHub knowledge as a requirement.</p>
           <p>And I don't blame them, Everyone should use version control for their projects.</p>
           <p>I've mentioned version control, what exactly is version control?</p>
@@ -153,31 +153,31 @@
         </aside>
       </section>
       <section data-transition="fade">
-        <h1>A brief, and mind-blowingly incomplete history of version control.</h1>
-        <p class="fragment">I'd like to write my final essay for school...</p>
+        <h1>A brief, and incomplete history of version control.</h1>
+        <p class="fragment">We're in charge of updating the employee handbook...</p>
         <aside class="notes">
-          <p>A brief, and mind-blowingly incomplete history of version control.</p>
-          <p>To demonstrate this concept we'll pretend we're writing our final school essay.</p>
+          <p>A brief, and incomplete history of version control.</p>
+          <p>To demonstrate this concept we'll pretend we're in charge of updating the employee handbook.</p>
         </aside>
       </section>
       <section>
         <h2>In the Beginning..</h2>
-        <p>Store my files in a folder on my computer (Repo)</p>
+        <p>Store my files in a folder on your computer (Repo)</p>
         <p><img src="img/folder.jpg" alt=""></p>
-        <p class="fragment">My Essay.doc</p>
+        <p class="fragment">Employee Handbook.doc</p>
         <aside class="notes">
           <p>file is stored in a folder, Otherwise known as your project repository, or repo</p>
-          <p>You create My Essay.doc</p>
+          <p>You create Employee Handbook.doc</p>
         </aside>
       </section>
       <section>
         <h1>Early Version control</h1>
-        <p>My Essay.doc</p>
-        <p class="fragment">My Essay_01.doc</p>
-        <p class="fragment">My Essay_Final.doc</p>
-        <p class="fragment">My Essay_FINAL.doc</p>
-        <p class="fragment">My Essay_02-02-1998.doc</p>
-        <p class="fragment">My Essay_Final_01_FINAL.doc</p>
+        <p>Employee Handbook.doc</p>
+        <p class="fragment">Employee Handbook_01.doc</p>
+        <p class="fragment">Employee Handbook_Final.doc</p>
+        <p class="fragment">Employee Handbook_FINAL.doc</p>
+        <p class="fragment">Employee Handbook_02-02-1998.doc</p>
+        <p class="fragment">Employee Handbook_Final_01_FINAL.doc</p>
         <aside class="notes">
           <p>early version control meant that you changed the name of your document each save.</p>
           <p>goes on and on and on, never remembering which one is the one to go with</p>
@@ -187,22 +187,33 @@
       </section>
       <section>
         <h1>There's Got to be a Better Way!</h1>
-        <p><img src="img/betterway.gif" width="500px" alt=""></p>
+        <p class="fragment"><img src="img/betterway.gif" width="500px" alt=""></p>
         <aside class="notes">
           <p>I have folders upon folders of projects that I used to maintain this way, and it drives me crazy.</p>
+          <p>Maintaining your files and projects this way is like cutting break with a wodden doorstop, Sure you'll get there eventually, but</p>
           <p>there's got to be a better way!</p>
+          <p>So there were some better version control systems that came out, you may already be familiar with some of them, CVS, SNVN, Mercurial, but along comes this heavyweight contender...</p>
         </aside>
       </section>
       <section>
-        <h2>Using Git</h2>
-        <p>Version control = Central repo, 1 file name, full history</p>
-        <p><img src="img/git-logo.png" alt=""></p>
+        <h1>GitHub</h1>
+        <p>Version control = Central repo, 1 file name full history</p>
+        <p>+ incredible social and project management toolkit</p>
+        <p><img src="img/collabocats.png" height="400px" alt=""></p>
         <aside class="notes">
-          <p>along comes git</p>
-          <p>Distributed vc system</p>
           <p>one project folder, hosted on a server, 1 filename, with a history of every change ever made to that file.</p>
+          <p>git vc, but hosted on a public site featuring a ton of social features to help create some of the best projects on the internet.</p>
+          <p><strong>Publish them</strong> or <strong>keep them private</strong>.</p>
           <p>very basic using one document, but this scales easily as we'll see soon.</p>
-          <p>there are some key terms you need to know about using Git</p>
+          <p>Lets learn the basics of Version Control using GitHub</p>
+        </aside>
+      </section>
+      <section data-transition="fade">
+        <h2>Repository is on a Server</h2>
+        <p>Your Project is hosted</p>
+        <p><img src="img/repo.png" class="workflow-image" alt=""></p>
+        <aside class="notes">
+          <p>files are on a server, and you need to make a local copy of it in order to make changes.</p>
         </aside>
       </section>
       <section data-transition="fade">
@@ -234,18 +245,15 @@
           <p>push your changes to the server</p>
           <p>Your Photocopy has now become the new master copy</p>
           <p>old master copy still fully intact in its old state, It's just filed away for easy access if you evry wanted to go back or view the changes( better metaphor)</p>
-          <p>this presentation is about github though, so what does github add to the mix</p>
+          <p>github is social though</p>
         </aside>
       </section>
-      <section>
-        <h1>Why Use GitHub?</h1>
-        <p>Version control = Public central repo</p>
-        <p>+ incredible social and project management toolkit</p>
-        <p><img src="img/collabocats.png" height="400px" alt=""></p>
+      <section data-transition="fade">
+        <h2>Social!</h2>
+        <p>Add new developers to the mix</p>
+        <p><img src="img/new-challenger.png" class="workflow-image" alt=""></p>
         <aside class="notes">
-          <p>git vc, but hosted on a public site featuring a ton of social features to help create some of the best projects on the internet.</p>
-          <p><strong>Publish them</strong> or <strong>keep them private</strong>.</p>
-          <p>A key feature of GitHub is the ability for someone to copy your repo and make it their own, we call this forking</p>
+          <p>it allows your projects to be copied to other users, (if you're not using a private system)</p>
         </aside>
       </section>
       <section data-transition="fade">
@@ -253,9 +261,26 @@
         <p>Create their own copy of your repo</p>
         <p><img src="img/fork.png" class="workflow-image" alt=""></p>
         <aside class="notes">
-          <p></p>
+          <p>Make a copy of your repo on the server and download it locallt</p>
+        </aside>
+      </section>
+      <section data-transition="fade">
+        <h2>Commit</h2>
+        <p>Make their changes locally</p>
+        <p><img src="img/fork-commit.png" class="workflow-image" alt=""></p>
+        <aside class="notes">
           <p>Correct it , spelling errors</p>
-          <p>add new features like adding the history of cats on the internet.</p>
+          <p>add new features</p>
+          <p>then they want to request that you pull in their changes into your repo</p>
+        </aside>
+      </section>
+      <section data-transition="fade">
+        <h2>Push</h2>
+        <p>Push their changes to their forked copies</p>
+        <p><img src="img/fork-push.png" class="workflow-image" alt=""></p>
+        <aside class="notes">
+          <p>Correct it , spelling errors</p>
+          <p>add new features</p>
           <p>then they want to request that you pull in their changes into your repo</p>
         </aside>
       </section>
@@ -287,7 +312,7 @@
         </aside>
       </section>
       <section>
-        <h1>RWD SWAT Team</h1>
+        <h1>Responsive Web Design (RWD) SWAT Team</h1>
         <aside class="notes">
           <p>Back in March of 2013, CTO's office heard about this thing called responsive web design.</p>
           <p>The web was aflutter about it, and the CTO's office wanted to learn more.</p>
@@ -312,7 +337,7 @@
         <h2>RWD Sprint Deliverables</h2>
         <ul>
           <li class="fragment">Alpha version of a RWD framework (<a href="https://github.com/nys-its/excelsior">Excelsior</a>)</li>
-          <li class="fragment">"Getting Started" website created (<a href="http://nys-its.github.com/go-responsive/">GoResponsive</a></li>
+          <li class="fragment">"Getting Started" website created (<a href="http://nys-its.github.com/go-responsive/">GoResponsive</a>)</li>
         </ul>
         <aside class="notes">
           <p>build the foundation for a framework</p>
@@ -434,7 +459,7 @@
         </aside>
       </section>
       <section data-transition="fade">
-        <h2>Differences List</h2>
+        <h2>Differences List (Diff)</h2>
         <pre class="old-code">1.| &lt;h1&gt;Hello, World!&lt;/h1&gt;</pre>
         <pre class="new-code fragment">1.| &lt;h1&gt;Hey There, World!&lt;/h1&gt;</pre>
         <aside class="notes">
@@ -469,7 +494,8 @@
         <h1>DMV SWAT Team</h1>
         <aside class="notes">
           <p>DMV was developing their Registration Renewal application.</p>
-          <p>they wanted it to be mobile friendly, and the best way to do that is to make it responsive..</p>
+          <p>This was a public site, so of course they they wanted it to be mobile friendly so everyone could use it.</p>
+          <p>the best way to make a public site mobile friendly is to develop it using RWD</p>
           <p>They were really pressed for developers so they asked the CTO's office for help.</p>
           <p>we mobilized another swat team to help them out.</p>
         </aside>
@@ -504,9 +530,9 @@
         <p>Not just 8 people..</p>
         <p class="fragment">But 4 different Agencies</p>
         <p class="fragment">..in 4 different buildings</p>
-        <p class="fragment">..working at the same time.</p>
+        <p class="fragment">..working as time alowed.</p>
         <aside class="notes">
-          <p>8 people.. 4 Agencies 4 buildings ..all working at the same time on the same project.</p>
+          <p>8 people.. 4 Agencies 4 buildings ..all working on the same project, as time allowed. That 20% time wasnt the same for everyone. We had the flexibility to chime in at any time 24/7, when our schedules allowed, and the team was kept in the loop.</p>
           <p>This was what ITS has been talking about. This was true cross-cluster collaboration</p>
           <p>More importantly though, I think it broke the mold of what NYS previously considered collaboration.</p>
           <p>I want to let you in on a secret. this collaboration would have never occurred if it weren't for a single directective.</p>
@@ -529,37 +555,81 @@
         <aside class="notes">
           <p>First thing you see when you log into github.com is your news feed.</p>
           <p>You see activity of the people, repos and issues that you are following</p>
-          <p>Think of it like a facebook feed, but with project and user information you actually care about instead of pictures of half eaten lunches, or offensive political rants from people you haven't seen in 20 years</p>
-        </aside>
-      </section>
-      <section>
-        <h2>Search</h2>
-        <p><img src="img/screen13.jpg" alt=""></p>
-        <aside class="notes">
-          <p>The search bar at the top of the page is context aware.</p>
-          <p>It's search results it displays are relative to where you started the search from.</p>
-          <p>If you are on a repo page, it will search the repo, but if you are on a user page, or the home page, it will search the whole site.</p>
-          <p>You can always click the text next to it to widen or narrow the search context.</p>
+          <p>Think of it like a facebook feed, but instead of seeing pictures of half eaten lunches, and your friends latest candy crush scores</p>
+          <p>you'll see interesting issues and activitiy from professionals and projects you are following.</p>
+          <p>There is also a search box at the top of the screne to search the site.</p>
           <p>Each GitHub user has their own user page. For demonstration purposes let's type in my username here</p>
         </aside>
       </section>
-      <section>
+      <section data-transition="fade">
         <h2>User Page</h2>
         <p><img src="img/screen14.png" alt=""></p>
         <aside class="notes">
           <p>You can see an overview of any users GitHub activity on their page</p>
-          <p>You can also follow a user to see what they do in the future as well.</p>
-          <p>you'll see a list of all of their repos as well, lets click my jquery plugin to see what a repo page looks like</p>
         </aside>
       </section>
-      <section>
+      <section data-transition="fade">
+        <h2>User Page</h2>
+        <p><img src="img/screen14-01.png" alt=""></p>
+        <aside class="notes">
+          <p>Theres a  follow a user to see what they do in the future as well.</p>
+        </aside>
+      </section>
+      <section data-transition="fade">
+        <h2>User Page</h2>
+        <p><img src="img/screen14-02.png" alt=""></p>
+        <aside class="notes">
+          <p>you'll see a list of all of their repos as well</p>
+        </aside>
+      </section>
+      <section data-transition="fade">
+        <h2>User Page</h2>
+        <p><img src="img/screen14-03.png" alt=""></p>
+        <aside class="notes">
+          <p>and any they have contributed to</p>
+        </aside>
+      </section>
+      <section data-transition="fade">
+        <h2>User Page</h2>
+        <p><img src="img/screen14-04.png" alt=""></p>
+        <aside class="notes">
+          <p>and a cute little chart of contributions over time</p>
+          <p>lets click my jquery plugin to see what a repo page looks like</p>
+        </aside>
+      </section>
+      <section data-transition="fade">
         <h2>Repo Page</h2>
         <p><img src="img/screen15.png" alt=""></p>
         <aside class="notes">
           <p>Every GitHub repo has its own page on the site</p>
+        </aside>
+      </section>
+      <section data-transition="fade">
+        <h2>Repo Page</h2>
+        <p><img src="img/screen15-01.png" alt=""></p>
+        <aside class="notes">
           <p>at the top of every repo page you'll see a short description of that repo if the author created one.</p>
+        </aside>
+      </section>
+      <section data-transition="fade">
+        <h2>Repo Page</h2>
+        <p><img src="img/screen15-02.png" alt=""></p>
+        <aside class="notes">
           <p>below that you'll see a general activity report of that repo</p>
+        </aside>
+      </section>
+      <section data-transition="fade">
+        <h2>Repo Page</h2>
+        <p><img src="img/screen15-03.png" alt=""></p>
+        <aside class="notes">
           <p>below that you'll see all the files associated with it.</p>
+        </aside>
+      </section>
+      <section data-transition="fade">
+        <h2>Repo Page</h2>
+        <p><img src="img/screen15-04.png" alt=""></p>
+        <aside class="notes">
+          <p>these tabs on teh right take you to some cool features, I'll discuss Issues and Pulse later</p>
           <p>You'll notice a couple of buttons on this page as well.</p>
         </aside>
       </section>
@@ -765,13 +835,15 @@
         <aside class="notes">
           <p>Thats just the beginning, I pulled a lot of content out of this presentation that I felt was too advanced for a large primarily non-hands-on group.</p>
           <p>If you want to learn more about GitHub and some more advanced techniques.</p>
-          <p>I'm a video gamer, I love games. In the gaming world, when you get enough experience, you level up</p>
+          <p>I'm a video gamer...</p>
         </aside>
       </section>
       <section>
-        <h1 class="superhuge">LEVEL UP!</h1>
-        <img src="img/linktocat.png" height="450px">
+        <h1 class="superhuge fragment" data-fragment-index="1">LEVEL UP!</h1>
+        <p style="height:450px;"><img src="img/original.png" style="position:absolute; left:30%; margin-top:25px;" class="fragment fade-out" data-fragment-index="1" height="450px">
+        <img src="img/linktocat.png" style="position:absolute; left:30%; margin-top:0" class="fragment" data-fragment-index="1" height="450px"></p>
         <aside class="notes">
+          <p>I love games. In the gaming world, when you get enough experience, you level up</p>
           <p>Just from being here today you've already levelled up, congrats!</p>
           <p>You can leave here today and tell everyone you know that you are a Level 2 GitHubber</p>
           <p>if you'd like to level up even more...</p>
@@ -781,9 +853,11 @@
         <h2>Level Up With These Techniques</h2>
         <ul>
           <li><a href="https://help.github.com/articles/using-pull-requests">Pull Requests</a></li>
-          <li><a href="https://www.atlassian.com/git/workflows">Branching Workflows</a></li>
-          <li><a href="http://pages.github.com/">GitHub Pages</a></li>
-          <li><a href="http://www.gitguys.com/topics/merging-with-a-conflict-conflicts-andresolutions/">Merge Conflicts</a></li>
+          <li class="fragment"><a href="https://www.atlassian.com/git/workflows">Branching Workflows</a></li>
+          <li class="fragment"><a href="http://pages.github.com/">GitHub Pages</a>
+          <ul><li>(<a href="http://esteinborn.github.io/github-for-cats">esteinborn.github.io/github-for-cats</a>)</li></ul>
+        </li>
+          <li class="fragment"><a href="http://www.gitguys.com/topics/merging-with-a-conflict-conflicts-andresolutions/">Merge Conflicts</a></li>
         </ul>
         <aside class="notes">
           <p>These are the next things you need to know once you get the basics down pat.</p>
@@ -812,13 +886,16 @@
         <h3>ITS Public Safety Cluster</h3>
         <p><a href="mailto:eric.steinborn@its.ny.gov">Eric.Steinborn@its.ny.gov</a></p>
         <br>
-        <p>View this presentation online @<br>
-          <a href="http://esteinborn.github.io/github-for-cats">esteinborn.github.io/github-for-cats</a></p>
+        <p><a href="http://esteinborn.github.io/github-for-cats">View this presentation online:<br>
+          esteinborn.github.io/github-for-cats</a></p>
+        <p><small><a href="http://esteinborn.github.io/github-for-cats?print-pdf">Print this presentation</a></small></p>
         <aside class="notes">
           <p>Big thanks for the Forum for letting me give this presentaiton on a topic that is near and dear to my heart.</p>
           <p>I think GitHub is unbelievablely awesome.</p>
+          <p>If you are feeling a bit overwhelmed with the possibilities of GitHub and don't know whereto start</p>
           <p>don't forget the lab at the end of the presentation to help you make your first github commit.</p>
-          <p>Let's get GitHub working for New York State, Today!</p>
+          <p>And trust me, it gets easier as time goes by. It may look like a lot now but when you jump right in, you'll get the hang of it quickly.</p>
+          <p>Let's start today to get GitHub working for you!</p>
         </aside>
       </section>
       <section>
