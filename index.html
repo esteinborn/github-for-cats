@@ -75,9 +75,9 @@
           <p></p>
         </aside>
       </section>
-      <section data-state="githubvideo" data-background="#222222">
+      <section data-state="githubmusicvideo" data-background="#222222">
         <iframe id="player" width="911" height="548" src="//www.youtube.com/embed/qT90jZP58jM?rel=0&amp;iv_load_policy=3&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
-        <p class="bright-text">Official GitHub Music Video</p>
+        <p class="bright-text">"Better Together" Official GitHub Music Video</p>
         <aside class="notes">
           <p></p>
         </aside>
@@ -122,7 +122,15 @@
         <aside class="notes">
           <p>Version control for your projects, But that would be selling it short, as it's much more than just source control</p>
           <p>It's Version Control with a robust set of collaborative and project management tools</p>
-          <p>there are so many people on GitHub that it's becoming the new standard in the IT project landscape</p>
+          <p>They actually created a video that can explain it a million times better than I can.</p>
+          <p>sorry in advance about the silly alien music midway through it.</p>
+        </aside>
+      </section>
+      <section data-state="githubvideo" data-background="#222222">
+        <iframe id="playerthree" width="911" height="548" src="//www.youtube.com/embed/l_T3XEgXl14?rel=0&amp;iv_load_policy=3&amp;vq=hd720" frameborder="0" allowfullscreen></iframe>
+        <p class="bright-text">GitHub is Changing the World</p>
+        <aside class="notes">
+          <p></p>
         </aside>
       </section>
       <section>
@@ -931,7 +939,7 @@
 		]
 	});
 
-  Reveal.addEventListener( 'githubvideo', function() {
+  Reveal.addEventListener( 'githubmusicvideo', function() {
     player.playVideo();
   }, false );
 
@@ -939,16 +947,23 @@
     playertwo.playVideo();
   }, false );
 
+  Reveal.addEventListener( 'githubvideo', function() {
+    playerthree.playVideo();
+  }, false );
+
   Reveal.addEventListener( 'logoScroll', function() {
     var logos = document.getElementById("title-scroll");
     logos.className = logos.className += " titlecontent";
   }, false );
+
   var player,
-      playertwo;
+      playertwo,
+      playerthree;
 
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('player');
     playertwo = new YT.Player('playertwo');
+    playerthree = new YT.Player('playerthree');
   }
 
   // var overrideInstaller = function(){
