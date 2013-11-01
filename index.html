@@ -914,7 +914,106 @@
           <p>Questions: Please try to allow time for people to ask basic questions first, if we get through the basic questions, and you haev more more advanced ones we can hit them after. I don;t want to be any more confusing than I already have. If I cant get to your question here today, feel free to email me, or ask on yammer in the revision control group. I alwas try to make myself available for things that I think are awesome.</p>
         </aside>
       </section>
-
+      <section>
+        <h5>Can you incorporate pull requests piece by piece without pulling in the whole request?</h5>
+        <p>You would deny te pull request, commenting on the code that you don;t want to include in the repo, and have the person re-submit their request before pulling it in.</p>
+      </section>
+      <section>
+        <h5>What about deployment? How do you test, approve, deploy final version? How do you keep track of that? How do you launch project for production?</h5>
+        <p>Use branching workflows for testing, approval and deploying. There are also automated tools, such as Travis, that reads through testing scripts, etc. Investigate travis, google “github deployment models”</p>
+      </section>
+      <section>
+        <h5>Examples of other types of collaboration, besides code repositories? Are there more than just code projects on github?</h5>
+        <p>Yes, there are GIS repositories, docs. There is only limited support for binary files such as .doc, .pdf.</p>
+      </section>
+      <section>
+        <h5>Can you go back after you’ve committed and pushed?</h5>
+        <p>Yes, windows client has a “rollback” commit button you can click, which rolls back that commit and allows you to change it. It can go back to any previous commits.</p>
+      </section>
+      <section>
+        <h5>How does github manage enhancements?</h5>
+        <p>They develop github.com on github.com. Development team announces new features on their blog posts. Though you may want to do a search on that if you are interested in learning more about it.</p>
+      </section>
+      <section>
+        <h5>Private repositories require subscription? Does ITS have a private repository account?</h5>
+        <p>Yes private repos require a subscription. ITS does have a private subscription for the organization for use with officially sanctioned ITS projects. Current ITS stance on an ITS-wide implementation is" “we’re working on it.”</p>
+      </section>
+      <section>
+        <h5>How easy to migrate from SVN to github?</h5>
+        <p>Copy your svn folder into github and now you have a github repository. GitHub is very good at working with SVN projects</p>
+      </section>
+      <section>
+        <h5>Cyber security and access control. How do you keep those private codes private on github? How do you host security related codel on github?</h5>
+        <p>Don’t put those on github. Just keep them locally.</p>
+      </section>
+      <section>
+        <h5>Is that also true of the zip download?</h5>
+        <p>Yes, because zip download only includes what’s on the github repository.</p>
+      </section>
+      <section>
+        <h5>How does github manage 2 conflicting pushes, i.e., changes to same line of code? and how does it handle changes to the same file, but not hte same line?</h5>
+        <p>Github alerts to conflicts which you have to resolve. such as when two people are editing the same line of code. But if there are no conflicts, they just get merged together.</p>
+      </section>
+      <section>
+        <h5>Typical security is based on roles/permissions within teams? How does github do it?</h5>
+        <p>Not sure if github permission system is robust down to level of files/folders. It can be assigned by user. You can use branching and a Branch master user who cna accept and deny any changes made to projects that shouldn't be changed.</p>
+      </section>
+      <section>
+        <h5>How many people can merge pushes into master on remote?</h5>
+        <p>You can decide how many people have this access through the GitHub permissions system. This can be managed thru branching as well. So person responsible handles those changes.</p>
+      </section>
+      <section>
+        <h5>Can you close old projects so no further changes occur?</h5>
+        <p>Yes, by locking out anyone else from making changes to that code, i.e., only one person can make changes to final official version. But Eric recommends not doing that, instead recommend people make changes in their branch and then decide if you want to pull them in.</p>
+      </section>
+      <section>
+        <h5>Can you delete repositories?</h5>
+        <p>Yes, it deletes your original repository, but not any forks.</p>
+      </section>
+      <section>
+        <h5>What about vendor specific spreadsheets? How does that fit in with github.</h5>
+        <p>Excel are binary files and GitHub is not currently set up to handle them easily. Eric wouldnt recommend using GitHub is you are only using binary files.</p>
+      </section>
+      <section>
+        <h5>If you have a group doing front-end and another using back-end. Would you see this as managing front-end development? What’s best practice? Also what about integration with testing tools?</h5>
+        <p>Use a brancing methodology to manage different environments, i.e., development, testing, master. Do your syncs between the different branches on the different levels. For testing you can use travis testing tools.</p>
+      </section>
+      <section>
+        <h5>What about multiple deployments such as slightly different versions for internal vs. external users?</h5>
+        <p>With a proper configuration you can configure any repository to do anything. With Travis, you can write a script to put this folder on this server, this folder on this server, and this folder on both servers -- with all the credentials, etc. needed.</p>
+      </section>
+      <section>
+        <h5>What about using github to find code?</h5>
+        <p>Eric recommends just googling, often github will show up. The github search isn’t necessarily good for topic searching.</p>
+      </section>
+      <section>
+        <h5>Are there strategies to attract contributors to your repository?</h5>
+        <p>Put it in a footer to say “developed on github” Advertise that you’re using “XYZ on github”</p>
+      </section>
+      <section>
+        <h5>Has github made you a better coder?</h5>
+        <p>Yes, because of the social aspects where people improve on what you’ve done. Also, the public nature makes you conscious of what you’re doing. And just the structure and processes involved.</p>
+      </section>
+      <section>
+        <h5>Should you have one github account or multiple github accounts?</h5>
+        <p>Eric recommends one github account and create multiple projects within that. Eric recommends using Github for Windows as opposed to command line for beginners. You can have multiple organizations associated with your one user account</p>
+      </section>
+      <section>
+        <h5>For help, should you google or help in github for command line help?</h5>
+        <p>Use ProGit book for command line info. Also do “trygit” multiple times until you get it. Eric had to do it 5 times before he finally got it.</p>
+      </section>
+      <section>
+        <h5>Do you prefer using github with windows, linux, or mac?</h5>
+        <p>Github works great as long as you don’t have proxy issues. Command line works if you’re comfortable with that. Use whichever platform you want, Win and mac both have official gui clients. Chances are good that if you use linux, you'll probably be happier using the command line.</p>
+      </section>
+      <section>
+        <h5>Can we use github for our policy guide being worked on by 10 people?</h5>
+        <p>Maybe the best way to do is to get everybody in room together and decide on what the issues are and settle those at the start. Create issues for each piece of the policy that need to be worked on. Then use github to assign them to each user who will be responsible for editing that piece. Github is best when everyone knows what they’re doing on a common process. Issues really help to make that work easily.</p>
+      </section>
+      <section>
+        <h5>In github are private repositories secure?</h5>
+        <p>Yes these postings are sent via SSH or HTTPS. It is private and locked down. GitHub Enterprise is also completely behind your firewall if you use that instead.</p>
+      </section>
 		</div>
 	</div>
 	<script src="lib/js/head.min.js"></script>
